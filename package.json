@@ -1,20 +1,37 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "operation-medical-care",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -H 0.0.0.0 -p $PORT"
   },
   "dependencies": {
-    "next": "^10.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
-  },
-  "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/react": "^17.0.4",
-    "typescript": "^4.2.4"
+    "@material-ui/core": "^4.11.0",
+    "bootstrap": "^4.3.1",
+    "next": "^10.2.3",
+    "node-sass": "^5.0.0",
+    "react": "^16.14.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-animated-css": "^1.2.1",
+    "react-bootstrap": "^1.0.1",
+    "react-countdown-now": "^2.1.2",
+    "react-dom": "^16.12.0",
+    "react-fancybox": "^0.2.5",
+    "react-fontawesome": "^1.7.1",
+    "react-modal-video": "^1.2.3",
+    "react-owl-carousel": "^2.3.1",
+    "react-particles-js": "^2.7.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.1",
+    "react-scroll": "^1.7.16",
+    "react-slick": "^0.25.2",
+    "react-sticky-header": "^0.2.0",
+    "react-toastify": "^6.0.8",
+    "reactjs-countdown": "0.0.8",
+    "reactstrap": "^8.2.0",
+    "simple-react-validator": "^1.5.0",
+    "slick-carousel": "^1.8.1"
   }
 }
