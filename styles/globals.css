@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-main {
+  @apply bg-primary-500 text-white font-semibold;
+  @apply rounded px-4 py-2 block;
+
+  @apply hover:text-white hover:bg-primary-700;
+}
+
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
@@ -102,6 +109,8 @@ img {
 
 .fi:before {
   margin: 0;
+
+  font-size: inherit;
 }
 
 .section-padding {
