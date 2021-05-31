@@ -1,16 +1,15 @@
-
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap");
 
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Open Sans", sans-serif!important;
+  font-family: "Open Sans", sans-serif !important;
   background-color: #fff;
   font-size: 16px;
   font-size: 1rem;
@@ -19,11 +18,9 @@ body {
   overflow-x: hidden;
 }
 
-
-
 @media (max-width: 767px) {
   body {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
@@ -40,14 +37,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   color: #062265;
-  font-weight: 600!important;
+  font-weight: 600 !important;
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Barlow Condensed', sans-serif;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow Condensed", sans-serif;
   color: #062265;
-  font-weight: 600!important;
+  font-weight: 600 !important;
 }
 
 ul {
@@ -66,13 +74,13 @@ a {
 }
 
 a:hover {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 img {
   max-width: 100%;
 }
-.App{
+.App {
   overflow: hidden;
   position: relative;
 }
@@ -98,13 +106,13 @@ img {
 
 @media (max-width: 991px) {
   .section-padding {
-      padding: 90px 0;
+    padding: 90px 0;
   }
 }
 
 @media (max-width: 767px) {
   .section-padding {
-      padding: 80px 0;
+    padding: 80px 0;
   }
 }
 
@@ -148,10 +156,9 @@ img {
 }
 
 @media (max-width: 767px) {
-
   .contact-validation-active #success,
   .contact-validation-active #error {
-      font-size: 15px;
+    font-size: 15px;
   }
 }
 
@@ -168,25 +175,25 @@ img {
 
 @-webkit-keyframes rotating {
   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotating {
   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -242,15 +249,13 @@ img {
   margin-bottom: 70px;
 }
 
-
-
 .wpo-section-title span {
   font-size: 18px;
   font-weight: 400;
   color: #08cc7f;
   display: block;
   margin-bottom: 10px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .wpo-section-title h2 {
@@ -264,15 +269,15 @@ img {
 
 @media (max-width: 991px) {
   .wpo-section-title h2 {
-      font-size: 45px;
-      font-size: 2.8125rem;
+    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 
 @media (max-width: 767px) {
   .wpo-section-title h2 {
-      font-size: 25px;
-      line-height: 35px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -286,22 +291,20 @@ img {
   padding: 13px 38px;
   border-radius: 5px;
   display: inline-block;
-  transition: all .3s;
+  transition: all 0.3s;
   border: none;
 }
 
 @media (max-width: 991px) {
-
   .theme-btn,
   .theme-btn-s2,
   .theme-btn-s4,
   .theme-btn-s3 {
-      font-size: 14px;
-      font-size: 0.875rem;
-      padding: 10px 25px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 10px 25px;
   }
 }
-
 
 .theme-btn:hover,
 .theme-btn-s2:hover,
@@ -322,9 +325,9 @@ img {
 .theme-btn-s4 {
   font-weight: 400;
   color: #666666;
-  transition: all .3s;
-  -moz-transition: all .3s;
-  -webkit-transition: all .3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 
 .theme-btn-s2 {
@@ -350,9 +353,9 @@ img {
 
 @media (max-width: 991px) {
   .theme-btn-s3 {
-      font-size: 14px;
-      font-size: 0.875rem;
-      padding: 10px 25px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 10px 25px;
   }
 }
 
@@ -363,12 +366,11 @@ img {
 
 @media (max-width: 991px) {
   .theme-btn-s4 {
-      font-size: 14px;
-      font-size: 0.875rem;
-      padding: 10px 25px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 10px 25px;
   }
 }
-
 
 .social-links {
   overflow: hidden;
@@ -395,8 +397,6 @@ img {
   background-color: #08cc7f;
 }
 
-
-
 .modal-video-close-btn {
   top: -20px;
   right: -20px;
@@ -406,7 +406,8 @@ img {
   border-radius: 50%;
 }
 
-.modal-video-close-btn:before, .modal-video-close-btn:after {
+.modal-video-close-btn:before,
+.modal-video-close-btn:after {
   top: 65%;
 }
 
