@@ -1,12 +1,12 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 .btn-main {
   @apply font-semibold text-white bg-primary-500;
   @apply block px-4 py-2 rounded;
 
   @apply hover:text-white hover:bg-primary-700;
+  @apply inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -406,3 +406,5 @@ img {
 .cBtnTheme {
   background: #08cc7f;
 }
+
+@tailwind utilities;
