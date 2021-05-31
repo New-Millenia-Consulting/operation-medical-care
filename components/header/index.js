@@ -17,16 +17,22 @@ const HeaderTopbar = () => {
         <ul className="flex flex-row h-full">
           <li className="flex flex-row items-center mr-3">
             {/* TODO Make this link a phone number */}
-            <a href="#">
-              <PhoneIcon className="inline w-4 h-4 text-gray-500" />
+            <a
+              href="#"
+              className="text-gray-500 transition-colors hover:text-blue-600"
+            >
+              <PhoneIcon className="inline w-4 h-4" />
               <span>+000123456789</span>
             </a>
           </li>
           <span className="block w-[1px] bg-gray-200 h-auto"></span>
           <li className="flex flex-row items-center ml-3">
             {/* TODO Make this link an email */}
-            <a href="#">
-              <MailIcon className="inline w-4 h-4 mr-1 text-gray-500 transform" />
+            <a
+              href="#"
+              className="text-gray-500 transition-colors hover:text-blue-600"
+            >
+              <MailIcon className="inline w-4 h-4 mr-1" />
               <span>nasarna@gmail.com</span>
             </a>
           </li>
@@ -49,8 +55,8 @@ const Header = () => {
     >
       <HeaderTopbar />
       <nav className="flex flex-row items-center justify-between w-full max-w-6xl py-5">
-        <h1 className="text-2xl font-bold tracking-tighter text-blue-800">
-          Operation Medical Care
+        <h1 className="text-2xl font-bold tracking-tighter text-blue-500">
+          <Link href="/">Operation Medical Care</Link>
         </h1>
         <ul className="flex flex-row space-x-5">
           {navigation.map((item) => (
