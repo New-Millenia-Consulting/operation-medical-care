@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -H 0.0.0.0 -p $PORT"
+    "start": "next start -H 0.0.0.0 -p $PORT",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -34,6 +35,11 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

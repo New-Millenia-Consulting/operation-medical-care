@@ -11,7 +11,13 @@ Please use Node `14.0`. [https://michael-kuehnel.de/node.js/2015/09/08/using-vm-
 npm install
 ```
 
-2. Run the development server:
+2. Set up commit hooks
+
+```bash
+npm prepare
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
