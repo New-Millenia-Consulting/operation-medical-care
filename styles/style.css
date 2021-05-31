@@ -262,113 +262,7 @@ URL:            http://themeforest.net/user/wpoceans
   list-style: none;
 }
 
-.logo {
-  max-width: 180px;
-  margin-top: 25px;
-}
-.logo img {
-  max-width: 180px;
-}
-.middle-header {
-  box-shadow: 0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1);
-}
 /* Navigation */
-
-nav ul {
-  margin-top: -4px;
-  text-align: right;
-}
-nav > ul > li {
-  display: inline-block;
-  margin-right: -1px;
-  position: relative;
-}
-nav ul li a {
-  display: inline-block;
-  color: #666;
-  font-size: 15px;
-  font-weight: 600;
-  position: relative;
-  padding: 40px 25px;
-}
-nav ul li a:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.1);
-  width: 100%;
-  height: 43px;
-  border-radius: 43px;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 21px);
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-  z-index: -1;
-}
-nav ul li a.active:before {
-  opacity: 1;
-}
-nav ul li a:hover:before {
-  opacity: 1;
-}
-nav ul li:hover > ul {
-  opacity: 1;
-  visibility: visible;
-}
-nav ul li:hover > ul li {
-  margin-top: 0;
-}
-nav ul li a:hover,
-nav ul li a.active {
-  color: #08cc7f;
-  text-decoration: none;
-}
-
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 215px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 99;
-  text-align: left;
-}
-nav ul ul li {
-  padding: 10px 15px;
-  background-color: #fff;
-  border-bottom: 1px solid #ebebeb;
-  margin-top: 20px;
-  position: relative;
-  transition: all 0.5s;
-  position: relative;
-}
-nav ul ul li i {
-  position: absolute;
-  right: 10px;
-  top: 18px;
-}
-nav ul ul li a {
-  padding: 5px;
-  color: #333;
-}
-nav ul ul li:last-child {
-  border-bottom: 0;
-}
-nav ul ul ul {
-  left: 100%;
-  top: 4px;
-  transition: all 0.5s;
-}
-
 header.fixed,
 header.fixed.style2,
 .layout3 header.fixed,
@@ -822,19 +716,6 @@ header.fixed .header-content {
   height: 40px;
   line-height: 40px;
   text-align: center;
-}
-
-@media (max-width: 1400px) {
-  nav ul ul ul {
-    left: -100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  nav ul li a {
-    display: inline-block;
-    padding: 40px 20px;
-  }
 }
 
 /* mobail-menu */
