@@ -14,7 +14,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-primary-500">
               CEO & Founder
             </h4>
-            <p className="flex-1 mt-3">
+            <p className="flex-1 mt-3 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
@@ -45,7 +45,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-primary-500">
               CEO & Founder
             </h4>
-            <p className="flex-1 mt-3">
+            <p className="flex-1 mt-3 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
@@ -76,7 +76,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-primary-500">
               CEO & Founder
             </h4>
-            <p className="flex-1 mt-3">
+            <p className="flex-1 mt-3 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
@@ -107,7 +107,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-primary-500">
               CEO & Founder
             </h4>
-            <p className="flex-1 mt-3">
+            <p className="flex-1 mt-3 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
