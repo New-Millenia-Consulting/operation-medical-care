@@ -12,7 +12,7 @@ const About = () => {
             <h1 className="mt-2 mb-6 text-3xl font-bold text-blue-gray-700">
               We Do Stuff In Belize
             </h1>
-            <p>
+            <p className="text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
