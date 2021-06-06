@@ -17,7 +17,7 @@ const Hero = () => {
             Some tagline <br />{" "}
             <span className="font-bold text-blue-500">Word</span>
           </h1>
-          <p className="max-w-md mt-10">
+          <p className="max-w-md mt-10 text-gray-600">
             Description underneath explaining our mission lorem ipsum
             mitochondria is the powerhouse of the cell beta-oxidation is the
             process in which fatty acids are broken down into acetyl-CoA

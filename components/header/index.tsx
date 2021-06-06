@@ -60,7 +60,10 @@ const Header = () => {
         </h1>
         <ul className="flex flex-row space-x-5">
           {navigation.map((item) => (
-            <li key={item.name} className="hover:text-primary-700">
+            <li
+              key={item.name}
+              className="text-gray-600 transition-colors hover:text-primary-500"
+            >
               <Link href={item.href}>{item.name}</Link>
             </li>
           ))}
