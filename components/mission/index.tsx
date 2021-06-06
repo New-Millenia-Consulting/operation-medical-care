@@ -1,76 +1,54 @@
 import React from "react";
 
-const Mission = (props) => {
+const Mission = () => {
   return (
-    <div className={`wpo-mission-area ${props.subclass}`}>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="wpo-section-title">
-              <span>What We Do?</span>
-              <h2>We Are In A Mission To Help The Helpless</h2>
-            </div>
-          </div>
+    <div className="flex flex-col items-center justify-center w-full pb-24 bg-blue-gray-50 text-primary-500">
+      <h3 className="text-primary-500">What Do We Do?</h3>
+      <h1 className="mt-2 text-3xl font-bold text-center text-blue-gray-700">
+        We Are On a Misson To Mission
+        <br />
+        To Help Belize's Children
+      </h1>
+      <div className="grid grid-cols-4 gap-8 px-10 mt-12 max-w-7xl">
+        <div className="flex flex-col items-center px-8 py-6 bg-white rounded-md shadow-xl">
+          <div className="w-16 h-16 rounded-full bg-primary-500"></div>
+          <h4 className="mt-2 mb-2 text-lg font-bold text-gray-700">
+            Medical Care
+          </h4>
+          <p className="text-center">
+            Lmao did you know the muffin man the muffin man did you know the
+            muffin man he lived on fairy lane
+          </p>
         </div>
-        <div className="wpo-mission-wrap">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-              <div className="wpo-mission-item">
-                <div className="wpo-mission-icon-5">
-                  <img src="images/mission/icon1.png" alt="" />
-                </div>
-                <div className="wpo-mission-content">
-                  <h2>Clean Water</h2>
-                  <p>
-                    Lorem ipsum dolor amet cosectetur adipiscing, sed do
-                    eiusmod.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-              <div className="wpo-mission-item">
-                <div className="wpo-mission-icon-6">
-                  <img src="images/mission/icon2.png" alt="" />
-                </div>
-                <div className="wpo-mission-content">
-                  <h2>Healthy Food</h2>
-                  <p>
-                    Lorem ipsum dolor amet cosectetur adipiscing, sed do
-                    eiusmod.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-              <div className="wpo-mission-item">
-                <div className="wpo-mission-icon-7">
-                  <img src="images/mission/icon3.png" alt="" />
-                </div>
-                <div className="wpo-mission-content">
-                  <h2>Pure Education</h2>
-                  <p>
-                    Lorem ipsum dolor amet cosectetur adipiscing, sed do
-                    eiusmod.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 col-12 custom-grid">
-              <div className="wpo-mission-item">
-                <div className="wpo-mission-icon-8">
-                  <img src="images/mission/icon4.png" alt="" />
-                </div>
-                <div className="wpo-mission-content">
-                  <h2>Medical Facilities</h2>
-                  <p>
-                    Lorem ipsum dolor amet cosectetur adipiscing, sed do
-                    eiusmod.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex flex-col items-center px-8 py-6 bg-white rounded-md shadow-xl">
+          <div className="w-16 h-16 rounded-full bg-primary-500"></div>
+          <h4 className="mt-2 mb-2 text-lg font-bold text-gray-700">
+            Something Care
+          </h4>
+          <p className="text-center">
+            Lmao did you know the muffin man the muffin man did you know the
+            muffin man he lived on fairy lane
+          </p>
+        </div>
+        <div className="flex flex-col items-center px-8 py-6 bg-white rounded-md shadow-xl">
+          <div className="w-16 h-16 rounded-full bg-primary-500"></div>
+          <h4 className="mt-2 mb-2 text-lg font-bold text-gray-700">
+            Medical Care
+          </h4>
+          <p className="text-center">
+            Lmao did you know the muffin man the muffin man did you know the
+            muffin man he lived on fairy lane
+          </p>
+        </div>
+        <div className="flex flex-col items-center px-8 py-6 bg-white rounded-md shadow-xl">
+          <div className="w-16 h-16 rounded-full bg-primary-500"></div>
+          <h4 className="mt-2 mb-2 text-lg font-bold text-gray-700">
+            Medical Care
+          </h4>
+          <p className="text-center">
+            Lmao did you know the muffin man the muffin man did you know the
+            muffin man he lived on fairy lane
+          </p>
         </div>
       </div>
     </div>
