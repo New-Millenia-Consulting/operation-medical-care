@@ -49,7 +49,7 @@ const Hero = () => {
         style={{ zIndex: -1 }}
       >
         <Image
-          src="/images/home/shape.jpg"
+          src="/images/home/shape.png"
           layout="fill"
           objectFit="contain"
           objectPosition="left bottom"
