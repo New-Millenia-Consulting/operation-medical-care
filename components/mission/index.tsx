@@ -1,3 +1,5 @@
+import React from "react";
+
 const Mission = (props) => {
   return (
     <div className={`wpo-mission-area ${props.subclass}`}>
