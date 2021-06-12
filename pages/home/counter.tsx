@@ -4,7 +4,7 @@ const CounterSection = () => {
       <div className="m-auto max-w-screen-2xl">
         <div className="grid w-full grid-cols-4 gap-12 divide-x divide-gray-50 divide-opacity-50">
           <div className="flex flex-col items-center">
-            <span className="text-6xl font-bold text-gray-50">$8000+</span>
+            <span className="text-6xl font-bold text-gray-50">$40k+</span>
             <span className="text-primary-200">In Donations</span>
           </div>
           <div className="flex flex-col items-center">
