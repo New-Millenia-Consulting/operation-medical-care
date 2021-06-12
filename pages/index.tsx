@@ -2,7 +2,6 @@ import Head from "next/head";
 
 import Header from "./home/header";
 import Hero from "./home/hero";
-import Mission from "./home/mission";
 import About from "./home/about";
 import CounterSection from "./home/counter";
 import TeamSection from "./home/team";
@@ -17,7 +16,6 @@ const HomePage = () => {
       </Head>
       <Header />
       <Hero />
-      <Mission />
       <About />
       <CounterSection />
       <TeamSection />
