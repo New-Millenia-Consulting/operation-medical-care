@@ -4,13 +4,14 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
 import { ChevronRightIcon } from "@heroicons/react/outline";
 
-import SwiperCore, { Navigation } from "swiper/core";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const About = () => {
   return (
@@ -60,16 +61,27 @@ const About = () => {
         <div className="grid px-6 pr-0 place-items-center">
           <Swiper
             navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            slidesPerView={1}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
             className="w-full h-full"
             style={{ height: "360px" }}
           >
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-1.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -82,13 +94,14 @@ const About = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-2.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -101,13 +114,14 @@ const About = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-3.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -120,13 +134,14 @@ const About = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-4.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -139,13 +154,14 @@ const About = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-5.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -158,13 +174,14 @@ const About = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="flex px-12">
+            <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
                   src="/images/home/about/photo-6.jpg"
                   layout="fill"
                   objectFit="cover"
+                  priority={true}
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
