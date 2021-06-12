@@ -11,9 +11,11 @@ const Hero = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div>
-          <h1 className="text-6xl font-semibold text-gray-600">
+          <h1 className="text-5xl font-medium text-gray-600">
             8 Days in Belize <br />{" "}
-            <span className="font-bold text-blue-500">Changing Lives</span>
+            <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-blue-600">
+              Changing Lives
+            </span>
           </h1>
           <p className="max-w-md mt-10 text-gray-600">
             A group of medical doctors, nurses, pharmacists, dietians, business

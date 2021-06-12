@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <div className="px-10 py-16 bg-white">
+    <div className="px-10 py-16 bg-blue-gray-50">
       <div className="grid grid-cols-2">
         <div className="flex flex-col items-end">
           <div className="max-w-xl">
