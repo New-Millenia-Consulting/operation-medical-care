@@ -1,12 +1,12 @@
-import React from "react";
-import Header from "../components/header";
-import Hero from "../components/hero";
-import Mission from "../components/mission";
-import About from "../components/about";
-import CounterSection from "../components/counter";
-import TeamSection from "../components/team";
-import Footer from "../components/footer";
 import Head from "next/head";
+
+import Header from "./home/header";
+import Hero from "./home/hero";
+import Mission from "./home/mission";
+import About from "./home/about";
+import CounterSection from "./home/counter";
+import TeamSection from "./home/team";
+import Footer from "./home/footer";
 
 const HomePage = () => {
   return (
