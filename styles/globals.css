@@ -1,0 +1,14 @@
+  
+@tailwind base;
+@tailwind components;
+
+.btn-main {
+  @apply font-semibold text-white transition-all;
+  @apply bg-gradient-to-tl from-blue-600 to-blue-600 via-blue-400;
+  @apply block px-4 py-2 rounded;
+
+  @apply hover:text-white bg-size-200 bg-pos-0 hover:bg-pos-100;
+  @apply inline-block;
+}
+
+@tailwind utilities;
