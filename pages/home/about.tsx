@@ -44,7 +44,7 @@ const About = () => {
               unaffordable.
             </p>
             <div className="flex flex-row items-center mt-8">
-              <Link href="/DonatePage">
+              <Link href="/donate">
                 <a className="px-5 py-2 text-base btn-main">Donate!</a>
               </Link>
 
@@ -67,7 +67,7 @@ const About = () => {
             slidesPerView={1}
             centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 4000,
               disableOnInteraction: false,
             }}
             loop={true}

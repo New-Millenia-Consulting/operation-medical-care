@@ -37,7 +37,7 @@ const HeaderTopbar = () => {
           </li>
         </ul>
         <div className="px-3 py-2 pr-0">
-          <Link href="/DonatePage">
+          <Link href="/donate">
             <a className="btn-main">Donate!</a>
           </Link>
         </div>

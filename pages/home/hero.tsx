@@ -24,7 +24,7 @@ const Hero = () => {
               commmitted to bringing healthcare to the remote villages of Belize
             </p>
             <div className="flex flex-col items-center mt-10 space-y-3">
-              <Link href="/DonatePage">
+              <Link href="/donate">
                 <a className="px-5 py-2 text-xl btn-main">Donate!</a>
               </Link>
               <p className="text-gray-500">or</p>
