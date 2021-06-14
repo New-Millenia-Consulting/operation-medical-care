@@ -19,9 +19,9 @@ const Hero = () => {
               </span>
             </h1>
             <p className="max-w-md mt-10 text-gray-600">
-              A group of medical doctors, nurses, pharmacists, dietians,
-              business owners, software engineers, and everyday people all
-              commmitted to bringing healthcare to the remote villages of Belize
+              A group of medical doctors, nurses, pharmacists, dieticans,
+              business owners, software engineers, and everyday people who are all
+              committed to bringing healthcare to the remote villages of Belize.
             </p>
             <div className="flex flex-col items-center mt-10 space-y-3">
               <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
