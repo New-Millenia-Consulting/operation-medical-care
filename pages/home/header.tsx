@@ -17,27 +17,27 @@ const HeaderTopbar = () => {
           <li className="flex flex-row items-center mr-3">
             {/* TODO Make this link a phone number */}
             <a
-              href="#"
+              href="tel:850-974-7400"
               className="text-gray-500 transition-colors hover:text-blue-600"
             >
               <PhoneIcon className="inline w-4 h-4" />
-              <span>+000123456789</span>
+              <span>(850) 974-7400</span>
             </a>
           </li>
           <span className="block w-[1px] bg-gray-200 h-auto"></span>
           <li className="flex flex-row items-center ml-3">
             {/* TODO Make this link an email */}
             <a
-              href="#"
+              href="mailto:operationmedicalcare@gmail.com"
               className="text-gray-500 transition-colors hover:text-blue-600"
             >
               <MailIcon className="inline w-4 h-4 mr-1" />
-              <span>medicalcare@gmail.com</span>
+              <span>operationmedicalcare@gmail.com</span>
             </a>
           </li>
         </ul>
         <div className="px-3 py-2 pr-0">
-          <Link href="/donate">
+          <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
             <a className="btn-main">Donate!</a>
           </Link>
         </div>

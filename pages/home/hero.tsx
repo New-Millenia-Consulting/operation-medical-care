@@ -24,17 +24,17 @@ const Hero = () => {
               commmitted to bringing healthcare to the remote villages of Belize
             </p>
             <div className="flex flex-col items-center mt-10 space-y-3">
-              <Link href="/donate">
+              <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
                 <a className="px-5 py-2 text-xl btn-main">Donate!</a>
               </Link>
               <p className="text-gray-500">or</p>
               <a
-                href="#"
+                href="tel:850-974-7400"
                 className="text-gray-800 transition hover:text-primary-500 group"
               >
                 <PhoneIcon className="inline w-5 h-5 mr-1 transform translate-y-[-1px]" />
                 <span className="text-gray-600 group-hover:text-primary-500">
-                  Call at <span className="font-semibold">+000123456789</span>
+                  Call at <span className="font-semibold">(850) 974-7400</span>
                 </span>
               </a>
             </div>

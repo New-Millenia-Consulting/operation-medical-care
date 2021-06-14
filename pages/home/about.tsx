@@ -44,7 +44,7 @@ const About = () => {
               unaffordable.
             </p>
             <div className="flex flex-row items-center mt-8">
-              <Link href="/donate">
+              <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
                 <a className="px-5 py-2 text-base btn-main">Donate!</a>
               </Link>
 
