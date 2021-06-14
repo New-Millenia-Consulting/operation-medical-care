@@ -52,8 +52,13 @@ const TeamSection = () => {
               Family Medicine
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Born in Crestview, Dr. John Johnson has always had a passion for
+              medicine and health care. He graduated from Louisiana State
+              University School of Medicine at Shreveport with a doctor of
+              medicine degree. Dr. Johnson's postgraduate studies involved a
+              three-year residency program in family practice at the University
+              of Alabama (Tuscaloosa Family Practice). In 1988, he earned his
+              board certification from the American Board of Family Practice.
             </p>
           </div>
         </div>
@@ -74,8 +79,11 @@ const TeamSection = () => {
               Optometrist
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Dr. Thomas Streeter first moved to the Emerald Coast in 1988. He
+              graduated from Niceville High School in 1993. He obtained his
+              Bachelors in Biology from the University of Alabama-Birmingham in
+              2000. From there, Dr. Tom pursued a Doctorate in Optometry, which
+              he obtained in 2005 from the UAB School of Optometry.
             </p>
           </div>
         </div>
@@ -118,8 +126,15 @@ const TeamSection = () => {
               Health Coordinator & Dietician
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Peter is population health coordinator and registered dietitian at
+              Val Verde Regional Medical Center in Del Rio, Texas. She
+              previously served at Franklin Primary Health Center Inc. in
+              Mobile, Ala., where she educated patients with diabetes, heart
+              disease, and high blood pressure, in addition to securing
+              nutrition and wellness grants for the underserved. For more than
+              15 years, Peter served as the administrator and team leader of her
+              husband’s pediatric practice in Crestview, Fla., where they
+              provided care for thousands of uninsured and underserved children.
             </p>
           </div>
         </div>
