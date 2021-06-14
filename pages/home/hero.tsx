@@ -9,7 +9,7 @@ const Hero = () => {
       className="relative"
       style={{ height: "70vh", minHeight: "55rem" }}
     >
-      <div className="relative grid w-full h-full grid-cols-2 m-auto max-w-7xl">
+      <div className="relative grid w-full h-full grid-cols-1 m-auto lg:grid-cols-2 max-w-7xl">
         <div className="flex flex-col items-center justify-center">
           <div>
             <h1 className="text-5xl font-medium text-gray-600">
@@ -40,47 +40,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="relative grid place-items-center isolate">
-          <div
-            className="absolute z-30 grid overflow-hidden transform bg-white border border-gray-200 rounded-md shadow-lg -rotate-6 place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <Image
-              src="/images/home/hero/crestview-bulletin-1-cropped.jpg"
-              alt="Crestview doctor coordinates Belize patient's tumor treatment"
-              width={500}
-              height={700}
-            />
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
-          <div
-            className="absolute z-20 grid overflow-hidden transform rotate-0 bg-white border border-gray-200 rounded-md shadow-lg place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
-          <div
-            className="absolute z-10 grid overflow-hidden transform bg-white border border-gray-200 rounded-md shadow-lg rotate-6 place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
-        </div>
+        <div
+          className="absolute top-0 left-0 bg-red-500 bg-opacity-50 lg:relative"
+          style={{ width: "100%", height: "50rem", zIndex: -1 }}
+        ></div>
       </div>
     </section>
   );
