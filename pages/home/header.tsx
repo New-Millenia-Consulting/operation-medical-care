@@ -11,7 +11,7 @@ const navigation = [
 
 const HeaderTopbar = () => {
   return (
-    <div className="w-full border-b border-gray-200">
+    <div className="hidden w-full border-b border-gray-200 md:block">
       <div className="flex flex-row items-center justify-between max-w-6xl m-auto px-7">
         <ul className="flex flex-row h-full">
           <li className="flex flex-row items-center mr-3">
@@ -53,11 +53,11 @@ const Header = () => {
       style={{ boxShadow: "0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1)" }}
     >
       <HeaderTopbar />
-      <nav className="flex flex-row items-center justify-between w-full max-w-6xl py-5 px-7">
+      <nav className="flex flex-row items-center justify-center w-full max-w-6xl py-5 md:justify-between px-7">
         <h1 className="text-2xl font-bold tracking-tighter text-blue-500">
           <Link href="/">Operation Medical Care</Link>
         </h1>
-        <ul className="flex flex-row space-x-5">
+        <ul className="flex-row hidden space-x-5 md:flex">
           {navigation.map((item) => (
             <li
               key={item.name}
