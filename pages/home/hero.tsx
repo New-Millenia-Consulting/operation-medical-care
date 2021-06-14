@@ -82,17 +82,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className="absolute bottom-0 left-0 w-full h-full"
-        style={{ zIndex: -1 }}
-      >
-        <Image
-          src="/images/home/shape.png"
-          layout="fill"
-          objectFit="contain"
-          objectPosition="left bottom"
-        />
-      </div>
     </section>
   );
 };
