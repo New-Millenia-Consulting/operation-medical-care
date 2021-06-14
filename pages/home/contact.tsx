@@ -10,19 +10,19 @@ const Contact = () => {
       </div> */}
       <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
         <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
-          <div className="max-w-lg mx-auto">
+          <div className="flex flex-col items-center max-w-lg mx-auto md:items-start">
             <h2
-              className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl"
+              className="text-2xl font-extrabold tracking-tight text-center text-gray-900 sm:text-3xl md:text-left"
               id="contact"
             >
               Get in touch
             </h2>
-            <p className="mt-3 text-lg leading-6 text-gray-500">
+            <p className="mt-3 text-lg leading-6 text-center text-gray-500 md:text-left">
               Looking to donate? Volunteer? Want to learn more about us? Leave
               us a message or call! Operation Medical Care is a 501c3 nonprofit.
             </p>
             <dl className="mt-8 text-base text-gray-500">
-              <div>
+              <div className="">
                 <dt className="sr-only">Postal address</dt>
                 <dd className="flex">
                   <MapIcon

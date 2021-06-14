@@ -61,7 +61,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="grid px-6 pr-0 place-items-center">
+        <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
             navigation={true}
             pagination={{
