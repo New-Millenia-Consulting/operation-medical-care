@@ -49,24 +49,6 @@ const TeamSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <div className="flex flex-row space-x-4">
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image
-                  src="/images/linkedin.svg"
-                  height={24}
-                  width={24}
-                ></Image>
-              </a>
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image src="/images/twitter.svg" height={24} width={24}></Image>
-              </a>
-            </div>
           </div>
         </div>
         <div className="flex flex-row">
@@ -89,24 +71,6 @@ const TeamSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <div className="flex flex-row space-x-4">
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image
-                  src="/images/linkedin.svg"
-                  height={24}
-                  width={24}
-                ></Image>
-              </a>
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image src="/images/twitter.svg" height={24} width={24}></Image>
-              </a>
-            </div>
           </div>
         </div>
         <div className="flex flex-row">
@@ -127,24 +91,6 @@ const TeamSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <div className="flex flex-row space-x-4">
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image
-                  src="/images/linkedin.svg"
-                  height={24}
-                  width={24}
-                ></Image>
-              </a>
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image src="/images/twitter.svg" height={24} width={24}></Image>
-              </a>
-            </div>
           </div>
         </div>
         <div className="flex flex-row">
@@ -165,24 +111,6 @@ const TeamSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <div className="flex flex-row space-x-4">
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image
-                  src="/images/linkedin.svg"
-                  height={24}
-                  width={24}
-                ></Image>
-              </a>
-              <a
-                href="#"
-                className="transition-opacity opacity-50 hover:opacity-30"
-              >
-                <Image src="/images/twitter.svg" height={24} width={24}></Image>
-              </a>
-            </div>
           </div>
         </div>
       </div>
