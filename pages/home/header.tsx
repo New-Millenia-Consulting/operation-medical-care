@@ -3,9 +3,9 @@ import Link from "next/link";
 import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "#" },
   { name: "About", href: "#about" },
-  { name: "Events", href: "#events" },
+  { name: "Team", href: "#team" },
   { name: "Contact", href: "#contact" },
 ];
 

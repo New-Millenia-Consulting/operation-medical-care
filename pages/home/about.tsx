@@ -19,9 +19,12 @@ const About = () => {
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center lg:items-end">
           <div className="max-w-xl px-5 md:px-0">
-            <h3 className="font-medium text-center text-primary-500 text-opacity-80 md:text-left">
+            <h2
+              className="font-medium text-center text-primary-500 text-opacity-80 md:text-left"
+              id="about"
+            >
               What Do We Do?
-            </h3>
+            </h2>
             <h1 className="mb-6 text-3xl font-bold text-center text-blue-gray-700 md:text-left">
               Providing{" "}
               <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-700">
@@ -49,7 +52,7 @@ const About = () => {
               </Link>
 
               <span className="mx-5 font-medium text-gray-700">or</span>
-              <Link href="#">
+              <Link href="#contact">
                 <span className="flex items-center text-lg font-medium text-primary-500 hover:cursor-pointer">
                   Get Involved!{" "}
                   <ChevronRightIcon className="inline w-5 h-5 ml-2 animate-bounce-right" />
