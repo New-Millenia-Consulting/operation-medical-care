@@ -7,7 +7,7 @@ const TeamSection = () => {
         className="text-4xl font-bold text-center text-blue-gray-800 md:text-left"
         id="team"
       >
-        Meet Our Team
+        Meet Our Board
       </h2>
       <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
