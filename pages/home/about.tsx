@@ -15,16 +15,16 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const About = () => {
   return (
-    <div className="px-10 py-32 bg-blue-gray-50">
+    <div className="py-32 md:px-10 bg-blue-gray-50">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center lg:items-end">
-          <div className="max-w-xl">
-            <h3 className="font-medium text-primary-500 text-opacity-80">
+          <div className="max-w-xl px-5 md:px-0">
+            <h3 className="font-medium text-center text-primary-500 text-opacity-80 md:text-left">
               What Do We Do?
             </h3>
-            <h1 className="mb-6 text-3xl font-bold text-blue-gray-700">
+            <h1 className="mb-6 text-3xl font-bold text-center text-blue-gray-700 md:text-left">
               Providing{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-700">
+              <span className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-blue-700">
                 Medical Care
               </span>
               <br />
@@ -33,7 +33,7 @@ const About = () => {
                 Supplies
               </span>
             </h1>
-            <p className="text-gray-600">
+            <p className="text-center text-gray-600 md:text-left">
               Every year, we spent 8 days traveling to remote villages in
               Belize. Our team of medical doctors, nurses, pharmacists,
               dietians, business owners, software engineers, and kind everday
@@ -43,7 +43,7 @@ const About = () => {
               toys, school supplies, and everyday items that would otherwise be
               unaffordable.
             </p>
-            <div className="flex flex-row items-center justify-center mt-8 lg:justify-start">
+            <div className="flex flex-col items-center justify-center mt-8 space-y-2 md:flex-row lg:justify-start md:space-y-0">
               <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
                 <a className="px-5 py-2 text-base btn-main">Donate!</a>
               </Link>

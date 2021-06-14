@@ -6,19 +6,19 @@ import { PhoneIcon } from "@heroicons/react/outline";
 const Hero = () => {
   return (
     <section
-      className="relative"
-      style={{ height: "70vh", minHeight: "55rem" }}
+      className="relative min-h-screen md:mt-0 md:min-h-[55rem]"
+      style={{ height: "70vh" }}
     >
       <div className="relative grid w-full h-full grid-cols-1 m-auto lg:grid-cols-2 max-w-7xl">
         <div className="flex flex-col items-center justify-center">
-          <div>
-            <h1 className="text-5xl font-medium text-gray-600">
+          <div className="px-12 md:pl-0">
+            <h1 className="text-3xl font-medium text-center text-gray-600 md:text-5xl md:text-left">
               8 Days in Belize <br />{" "}
-              <span className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-pink-500 to-blue-600">
+              <span className="text-4xl font-bold text-transparent md:text-6xl bg-clip-text bg-gradient-to-br from-pink-500 to-blue-600">
                 Changing Lives
               </span>
             </h1>
-            <p className="max-w-md mt-10 text-gray-600">
+            <p className="max-w-md mt-10 text-center text-gray-600 md:text-left">
               A group of medical doctors, nurses, pharmacists, dietians,
               business owners, software engineers, and everyday people all
               commmitted to bringing healthcare to the remote villages of Belize
