@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        title: "Ubuntu",
       },
       backgroundSize: {
         "size-200": "200% 200%",

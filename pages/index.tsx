@@ -13,6 +13,10 @@ const HomePage = () => {
       <Head>
         <title>Operation Medical Care</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header />
       <Hero />
