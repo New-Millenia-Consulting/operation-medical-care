@@ -12,6 +12,7 @@ const HomePage = () => {
     <>
       <Head>
         <title>Operation Medical Care</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link
           href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
