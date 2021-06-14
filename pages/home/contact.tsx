@@ -11,7 +11,10 @@ const Contact = () => {
       <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
         <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="max-w-lg mx-auto">
-            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+            <h2
+              className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl"
+              id="contact"
+            >
               Get in touch
             </h2>
             <p className="mt-3 text-lg leading-6 text-gray-500">
@@ -124,7 +127,7 @@ const Contact = () => {
                   defaultValue={""}
                 />
               </div>
-              <div>
+              <div className="flex justify-center w-full mb-8 lg:justify-start lg:mb-0">
                 <button type="submit" className="px-6 py-3 shadow btn-main">
                   Submit
                 </button>
