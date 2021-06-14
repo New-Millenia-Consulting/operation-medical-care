@@ -16,8 +16,8 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 const About = () => {
   return (
     <div className="px-10 py-32 bg-blue-gray-50">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col items-end">
+      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0">
+        <div className="flex flex-col items-center lg:items-end">
           <div className="max-w-xl">
             <h3 className="font-medium text-primary-500 text-opacity-80">
               What Do We Do?
@@ -43,7 +43,7 @@ const About = () => {
               toys, school supplies, and everyday items that would otherwise be
               unaffordable.
             </p>
-            <div className="flex flex-row items-center mt-8">
+            <div className="flex flex-row items-center justify-center mt-8 lg:justify-start">
               <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
                 <a className="px-5 py-2 text-base btn-main">Donate!</a>
               </Link>
