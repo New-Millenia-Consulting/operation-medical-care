@@ -8,6 +8,7 @@
 
   @apply hover:text-white bg-size-200 bg-pos-0 hover:bg-pos-100;
   @apply inline-block;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
 }
 
 @tailwind utilities;
