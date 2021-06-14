@@ -6,9 +6,9 @@ const TeamSection = () => {
       <h2 className="text-4xl font-bold text-blue-gray-800" id="team">
         Meet Our Team
       </h2>
-      <div className="grid grid-cols-2 gap-12 mt-10">
-        <div className="flex flex-row">
-          <div className="h-64 overflow-hidden rounded-md shadow-md w-44">
+      <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2">
+        <div className="flex flex-row items-center md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src="/images/home/team/peter-joseph.jpg"
               width={176}
@@ -29,8 +29,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="h-64 overflow-hidden rounded-md shadow-md w-44">
+        <div className="flex flex-row items-center md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src="/images/home/team/john-johnson.jpg"
               width={176}
@@ -51,8 +51,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="h-64 overflow-hidden rounded-md shadow-md w-44">
+        <div className="flex flex-row items-center md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src="/images/home/team/docs-streeter.jpg"
               width={176}
@@ -73,8 +73,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="h-64 overflow-hidden rounded-md shadow-md w-44">
+        <div className="flex flex-row items-center md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src="/images/home/team/sharlene-cox.jpg"
               width={176}
@@ -93,8 +93,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-row">
-          <div className="h-64 overflow-hidden rounded-md shadow-md w-44">
+        <div className="flex flex-row items-center md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src="/images/home/team/bernadine-peter.jpg"
               width={176}
