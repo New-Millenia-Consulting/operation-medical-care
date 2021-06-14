@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="relative grid place-items-center isolate">
+        <div className="relative hidden place-items-center isolate lg:grid">
           <div
             className="absolute z-30 grid overflow-hidden transform bg-white border border-gray-200 rounded-md shadow-lg -rotate-6 place-items-center"
             style={{ width: "500px", height: "700px" }}
