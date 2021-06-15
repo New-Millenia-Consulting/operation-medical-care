@@ -74,6 +74,7 @@ const Contact = () => {
               name="contact"
               data-netlify="true"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Full name
