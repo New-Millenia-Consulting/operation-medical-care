@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <img
             className="absolute inset-0 object-cover w-full h-full"
-            src="src=Users/zacharychester/Documents/operation-medical-care/public/images/home/hero/Operation-Medical-Care-Belize.jpg"
+            src="/images/home/hero/Operation-Medical-Care-Belize.jpg"
             alt=""
           />
         </div>
