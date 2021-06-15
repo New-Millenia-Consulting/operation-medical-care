@@ -1,5 +1,9 @@
+import { useEffect, MouseEvent, useRef } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
+
+import smoothscroll from "smoothscroll-polyfill";
 
 import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
 
@@ -47,6 +51,37 @@ const HeaderTopbar = () => {
 };
 
 const Header = () => {
+  const supportsSmoothScrollingRef = useRef(false);
+
+  useEffect(() => {
+    smoothscroll.polyfill();
+
+    const supportsSmoothScrolling = () => {
+      const body = document.body;
+      const scrollSave = body.style.scrollBehavior;
+      body.style.scrollBehavior = "smooth";
+
+      const hasSmooth = getComputedStyle(body).scrollBehavior === "smooth";
+      body.style.scrollBehavior = scrollSave;
+
+      return hasSmooth;
+    };
+
+    supportsSmoothScrollingRef.current = supportsSmoothScrolling();
+  }, []);
+
+  const anchorLinkClick = (event: MouseEvent<HTMLElement>) => {
+    if (!supportsSmoothScrollingRef.current) {
+      const href = (event.target as HTMLElement).getAttribute("href");
+
+      if (href.length > 1) {
+        document
+          .querySelector((event.target as HTMLElement).getAttribute("href"))
+          ?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div
       className="flex flex-col items-center justify-center w-full bg-white"
@@ -68,7 +103,9 @@ const Header = () => {
               key={item.name}
               className="text-gray-600 transition-colors hover:text-primary-500"
             >
-              <Link href={item.href}>{item.name}</Link>
+              <a href={item.href} onClick={anchorLinkClick}>
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>
