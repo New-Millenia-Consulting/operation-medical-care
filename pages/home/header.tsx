@@ -89,11 +89,11 @@ const Header = () => {
     >
       <HeaderTopbar />
       <nav className="flex flex-row items-center justify-center w-full max-w-6xl py-5 md:justify-between px-7">
-        <h1 className="text-2xl font-bold tracking-tighter text-blue-500">
+        <h1 className="text-2xl font-bold tracking-tighter ">
           <Link href="/">
             <span className="flex items-center justify-center">
-              <Image src="/images/home/plus.png" width={24} height={24} />{" "}
-              <span className="ml-2">Operation Medical Care</span>
+            <Image src="/images/home/plus.png" width={24} height={24} />{" "}
+              <span className="ml-2 font-normal text-green-600 " style={{ letterSpacing: ".5px" }}>Operation Medical Care</span>
             </span>
           </Link>
         </h1>

@@ -1,90 +1,44 @@
-import Link from "next/link";
-import Image from "next/image";
 
-import { PhoneIcon } from "@heroicons/react/outline";
 
-const Hero = () => {
+
+export default function Hero() {
   return (
-    <section
-      className="relative min-h-screen md:mt-0 md:min-h-[55rem]"
-      style={{ height: "70vh" }}
-    >
-      <div className="relative grid w-full h-full grid-cols-1 m-auto lg:grid-cols-2 max-w-7xl">
-        <div className="flex flex-col items-center justify-center">
-          <div className="px-12 md:pl-0">
-            <h1 className="text-3xl font-medium text-center text-gray-600 md:text-5xl md:text-left">
-              8 Days in Belize <br />{" "}
-              <span className="text-4xl font-bold text-transparent md:text-6xl bg-clip-text bg-gradient-to-br from-pink-500 to-blue-600">
-                Changing Lives
-              </span>
+    <div className="relative bg-gray-50">
+      
+
+      <main className="lg:relative">
+        <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
+          <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16" style={{ padding: '5rem'}}>
+            <h1 className="text-4xl font-normal tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+              <span className="block xl:inline">Providing Care</span>{' '}
+              <span className="block xl:inline">Changing Lives</span>
             </h1>
-            <p className="max-w-md mt-10 text-center text-gray-600 md:text-left">
-              A group of medical doctors, nurses, pharmacists, dieticans,
-              business owners, software engineers, and everyday people who are
-              all committed to bringing healthcare to the remote villages of
-              Belize.
+            <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl"
+            style={{ lineHeight: '1.768' }}>
+            We are a non-profit made up of Medical Doctors, Nurses, Pharmacists, Dietitians, Business Owners, 
+            Software Engineers and everyday people all committed to bringing healthcare to the remote villages of Belize.
             </p>
-            <div className="flex flex-col items-center mt-10 space-y-3">
-              <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-                <a className="px-5 py-2 text-xl btn-main">Donate!</a>
-              </Link>
-              <p className="text-gray-500">or</p>
-              <a
-                href="tel:850-974-7400"
-                className="text-gray-800 transition hover:text-primary-500 group"
-              >
-                <PhoneIcon className="inline w-5 h-5 mr-1 transform translate-y-[-1px]" />
-                <span className="text-gray-600 group-hover:text-primary-500">
-                  Call at <span className="font-semibold">(850) 974-7400</span>
-                </span>
-              </a>
+            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div className="rounded-md shadow">
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-blue-500 bg-white border border-transparent rounded-md text-blue-7 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
+                >
+                  Donate!
+                </a>
+              </div>
+              
             </div>
           </div>
         </div>
-        <div className="relative hidden place-items-center isolate lg:grid">
-          <div
-            className="absolute z-30 grid overflow-hidden transform bg-white border border-gray-200 rounded-md shadow-lg -rotate-6 place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <Image
-              src="/images/home/hero/crestview-bulletin-1-cropped.jpg"
-              alt="Crestview doctor coordinates Belize patient's tumor treatment"
-              width={500}
-              height={700}
-            />
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
-          <div
-            className="absolute z-20 grid overflow-hidden transform rotate-0 bg-white border border-gray-200 rounded-md shadow-lg place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
-          <div
-            className="absolute z-10 grid overflow-hidden transform bg-white border border-gray-200 rounded-md shadow-lg rotate-6 place-items-center"
-            style={{ width: "500px", height: "700px" }}
-          >
-            <div
-              className="absolute top-0 left-0 w-full h-full opacity-60"
-              style={{
-                backgroundImage: "url('/images/home/hero/rice-paper-2.png')",
-              }}
-            />
-          </div>
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+          <img
+            className="absolute inset-0 object-cover w-full h-full"
+            src="src=Users/zacharychester/Documents/operation-medical-care/public/images/home/hero/Operation-Medical-Care-Belize.jpg"
+            alt=""
+          />
         </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+      </main>
+    </div>
+  )
+}
