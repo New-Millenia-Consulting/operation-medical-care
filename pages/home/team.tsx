@@ -9,7 +9,7 @@ const TeamSection = () => {
       >
         Meet Our Board
       </h2>
-      <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
