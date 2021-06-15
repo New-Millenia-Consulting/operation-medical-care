@@ -7,6 +7,7 @@ import CounterSection from "./home/counter";
 import TeamSection from "./home/team";
 import Footer from "./home/footer";
 import Contact from "./home/contact";
+import Section2 from "./home/section2";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
       </Head>
       <Header />
       <Hero />
+      <Section2 />
       <About />
       <CounterSection />
       <TeamSection />

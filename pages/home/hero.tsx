@@ -31,13 +31,17 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      
+      
+        
+      <div className="relative grid w-full h-64 sm:flex sm:justify-center sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full place-items-center">
           <img
-            className="absolute inset-0 object-cover w-full h-full"
-            src="/images/home/hero/Operation-Medical-Care-Belize.jpg"
+            className="inset-0 object-cover h-auto"
+            style={{ width: "80%" }}
+            src="/images/home/hero/Operation-Medical-Care-Belize-1.jpg"
             alt=""
           />
-        </div>
+  </div> 
       </main>
     </div>
   )
