@@ -1,11 +1,11 @@
 import React from 'react';
 import { Parallax, Background } from 'react-parallax';
 
-const section2 = () => (
+const Section2 = () => (
   <div>
     <Parallax
       blur={10}
-      bgImage={require('path/to/image.jpg')}
+      bgImage="/images/home/hero/dreamstime__xxl_114898539.jpg"
       bgImageAlt="the cat"
       strength={200}
     >
@@ -16,7 +16,7 @@ const section2 = () => (
     </Parallax>
     <Parallax
       blur={{ min: -15, max: 15 }}
-      bgImage={require('path/to/another/image.jpg')}
+      bgImage="/images/home/hero/dreamstime__xxl_114898539.jpg"
       bgImageAlt="the dog"
       strength={200}
     >
@@ -26,9 +26,9 @@ const section2 = () => (
     <Parallax strength={300}>
       <div>Use the background component for custom elements</div>
       <Background className="custom-bg">
-        <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
+        <img src="/images/home/hero/dreamstime__xxl_114898539.jpg" alt="" />
       </Background>
     </Parallax>
   </div>
 );
-export default section2;
+export default Section2;
