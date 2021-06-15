@@ -15,14 +15,11 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const About = () => {
   return (
-    <div className="py-32 md:px-10 bg-blue-gray-50">
+    <div className="py-32 md:px-10 bg-blue-gray-50" id="about">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center lg:items-end">
           <div className="max-w-xl px-5 md:px-0">
-            <h2
-              className="font-medium text-center text-primary-500 text-opacity-80 md:text-left"
-              id="about"
-            >
+            <h2 className="font-medium text-center text-primary-500 text-opacity-80 md:text-left">
               What Do We Do?
             </h2>
             <h1 className="mb-6 text-3xl font-bold text-center text-blue-gray-700 md:text-left">
