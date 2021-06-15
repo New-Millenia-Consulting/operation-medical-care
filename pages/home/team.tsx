@@ -104,8 +104,8 @@ const TeamSection = () => {
               Treasurer
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Sharlene Cox has served as the Treasurer of Oepration Medical Care for 13 years with much success. She helps to raise the necessary funds for the Operation Medical Care Team to travel to Belive for annual mission trips, with this next trip being her&nbsp;9th.<br></br><br></br>
+            Cox has played an important role in many Crestview, Florida organizations over the years such as: 1895 Society Chairman at GFWC Florida, Youth Pillar Chairman at the Exchange Club of Crestview as well as the President of the Exchange Club of Crestview, and Treasurer of GFWC Woman’s Club of Crestview. Cox also owns her own catering business, Meme’s Specialities, which has delivered homemade catering to all size groups and functions for over a decade.
             </p>
           </div>
         </div>
