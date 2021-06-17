@@ -11,6 +11,10 @@
   @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
 }
 
+.btn-main:disabled {
+  @apply cursor-not-allowed pointer-events-none opacity-30;
+}
+
 @tailwind utilities;
 
 html {
