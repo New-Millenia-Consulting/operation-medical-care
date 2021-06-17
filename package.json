@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:netlify": "netlify dev",
+    "dev:live": "netlify dev --live",
     "build": "next build",
     "start": "next start",
     "prepare": "husky install"
@@ -28,6 +30,7 @@
     "eslint-plugin-react": "^7.24.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
+    "netlify-cli": "^3.37.36",
     "postcss": "^8.3.0",
     "prettier": "^2.3.1",
     "tailwindcss": "^2.1.4",
