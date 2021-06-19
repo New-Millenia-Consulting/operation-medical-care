@@ -186,17 +186,17 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="sr-only">
-                    Phone
+                  <label htmlFor="subject" className="sr-only">
+                    Subject
                   </label>
                   <input
                     type="text"
-                    name="phone"
-                    id="phone"
+                    name="subject"
+                    id="subject"
                     autoComplete="tel"
                     className="block w-full px-4 py-3 placeholder-gray-500 transition border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                    placeholder="Phone"
-                    {...register("phoneNumber")}
+                    placeholder="Message Subject"
+                    {...register("subject")}
                   />
                 </div>
                 <div>
