@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <div className="relative bg-gray-50">
       <main className="lg:relative">
-        <div className="w-full pt-16 pb-20 mx-auto text-center max-w-7xl lg:py-48 lg:text-left">
+        <div className="w-full pt-12 pb-20 mx-auto text-center max-w-7xl lg:py-16 lg:text-left">
           <div
             className="px-4 lg:w-1/2 sm:px-8 xl:pr-16"
             style={{ padding: "5rem" }}
