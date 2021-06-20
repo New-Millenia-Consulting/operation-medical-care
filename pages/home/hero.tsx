@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Parallax } from "react-scroll-parallax";
 
 export default function Hero() {
@@ -23,14 +25,11 @@ export default function Hero() {
               villages of Belize.
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
-                <a
-                  href="#"
-                  className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-blue-500 bg-white border border-transparent rounded-md text-blue-7 hover:bg-blue-700 md:py-4 md:text-lg md:px-10"
-                >
+              <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
+                <span className="px-10 py-4 font-medium transition-all bg-white rounded shadow text-primary-500 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
                   Donate!
-                </a>
-              </div>
+                </span>
+              </Link>
             </div>
           </div>
         </div>
@@ -39,7 +38,6 @@ export default function Hero() {
             <Parallax y={[-40, 40]}>
               <img
                 className="object-cover h-auto"
-                // style={{ top: "-80px", bottom: "40px" }}
                 src="/images/home/hero/Operation-Medical-Care-Belize-1.jpg"
                 alt=""
               />
