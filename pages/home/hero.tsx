@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Parallax } from "react-scroll-parallax";
 import ImageChildren from "../../public/images/home/hero/Operation-Medical-Care-Belize-1.jpg";
 
 export default function Hero() {
@@ -37,16 +36,14 @@ export default function Hero() {
         </div>
         <div className="relative grid w-full h-64 sm:flex sm:justify-center sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full place-items-center">
           <div className="w-4/5 overflow-hidden" style={{ width: "80%" }}>
-            <Parallax y={[-40, 40]}>
-              <Image
-                className="object-cover h-auto"
-                src={ImageChildren}
-                width={1024}
-                height={860}
-                placeholder="blur"
-                alt="3 Belizean children having fun"
-              />
-            </Parallax>
+            <Image
+              className="object-cover h-auto"
+              src={ImageChildren}
+              width={1024}
+              height={860}
+              placeholder="blur"
+              alt="3 Belizean children having fun"
+            />
           </div>
         </div>
       </main>

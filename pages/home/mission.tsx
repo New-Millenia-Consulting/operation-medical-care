@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { Parallax } from "react-scroll-parallax";
+
 import ImageMap from "../../public/images/home/mission/dreamstime_xxl_114898439.jpg";
 
 export default function section2() {
@@ -46,23 +48,25 @@ export default function section2() {
             </svg>
           </div>
           <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20 ">
-            <div
-              className="relative"
-              style={{ width: "560px", height: "350px" }}
-            >
-              {/* Honestly I don't know why we need this absolute inset-0 */}
-              {/* But if we don't have this wrapper then the image doesn't take up the entire height */}
-              <div className="absolute inset-0 overflow-hidden shadow rounded-2xl">
-                <Image
-                  src={ImageMap}
-                  objectFit="cover"
-                  placeholder="blur"
-                  alt="Belize on a map"
-                />
-                <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
-                <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
+            <Parallax y={[-20, 20]}>
+              <div
+                className="relative"
+                style={{ width: "560px", height: "350px" }}
+              >
+                {/* Honestly I don't know why we need this absolute inset-0 */}
+                {/* But if we don't have this wrapper then the image doesn't take up the entire height */}
+                <div className="absolute inset-0 overflow-hidden shadow rounded-2xl">
+                  <Image
+                    src={ImageMap}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Belize on a map"
+                  />
+                  <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
+                  <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
+                </div>
               </div>
-            </div>
+            </Parallax>
           </div>
         </div>
 
