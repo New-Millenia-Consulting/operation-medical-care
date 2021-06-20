@@ -108,6 +108,7 @@ export default async function ContactFunction(
         .end("Request must have content-type of mutlipart/form-data");
     }
   } else {
-    res.status(403).end(`${req.method} method not supported on this route`);
+    res.setHeader("Allow", "POST");
+    res.status(405).end(`${req.method} method not allowed on this route`);
   }
 }
