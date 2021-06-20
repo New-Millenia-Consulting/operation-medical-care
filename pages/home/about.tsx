@@ -7,8 +7,14 @@ import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
 import SwiperCore, { Pagination, Navigation } from "swiper/core";
-
 SwiperCore.use([Pagination, Navigation]);
+
+import Image1 from "../../public/images/home/about/photo-1.jpg";
+import Image2 from "../../public/images/home/about/photo-2.jpg";
+import Image3 from "../../public/images/home/about/photo-3.jpg";
+import Image4 from "../../public/images/home/about/photo-4.jpg";
+import Image5 from "../../public/images/home/about/photo-5.jpg";
+import Image6 from "../../public/images/home/about/photo-6.jpg";
 
 const About = () => {
   return (
@@ -32,10 +38,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-1.jpg"
+                  src={Image1}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -52,10 +59,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-2.jpg"
+                  src={Image2}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -72,10 +80,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-3.jpg"
+                  src={Image3}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -92,10 +101,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-4.jpg"
+                  src={Image4}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -112,10 +122,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-5.jpg"
+                  src={Image5}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span
@@ -132,10 +143,11 @@ const About = () => {
               <div className="relative w-full h-full overflow-hidden rounded-md">
                 <Image
                   className="w-full h-full"
-                  src="/images/home/about/photo-6.jpg"
+                  src={Image6}
                   layout="fill"
                   objectFit="cover"
                   priority={true}
+                  placeholder="blur"
                 />
                 <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
                   <span

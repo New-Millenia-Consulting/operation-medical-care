@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import ImageMap from "../../public/images/home/mission/dreamstime_xxl_114898439.jpg";
+
 export default function section2() {
   return (
     <div className="relative py-16 bg-white sm:py-24">
@@ -52,11 +54,10 @@ export default function section2() {
               {/* But if we don't have this wrapper then the image doesn't take up the entire height */}
               <div className="absolute inset-0 overflow-hidden shadow rounded-2xl">
                 <Image
-                  src="/images/home/hero/dreamstime_xxl_114898439.jpg"
-                  width={560}
-                  height={350}
+                  src={ImageMap}
                   objectFit="cover"
-                  alt=""
+                  placeholder="blur"
+                  alt="Belize on a map"
                 />
                 <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
                 <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
