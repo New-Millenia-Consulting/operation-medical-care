@@ -1,3 +1,5 @@
+import { Parallax } from "react-scroll-parallax";
+
 export default function Hero() {
   return (
     <div className="relative bg-gray-50">
@@ -32,14 +34,17 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
         <div className="relative grid w-full h-64 sm:flex sm:justify-center sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full place-items-center">
-          <img
-            className="inset-0 object-cover h-auto"
-            style={{ width: "80%" }}
-            src="/images/home/hero/Operation-Medical-Care-Belize-1.jpg"
-            alt=""
-          />
+          <div className="w-4/5 overflow-hidden" style={{ width: "80%" }}>
+            <Parallax y={[-40, 40]}>
+              <img
+                className="object-cover h-auto"
+                // style={{ top: "-80px", bottom: "40px" }}
+                src="/images/home/hero/Operation-Medical-Care-Belize-1.jpg"
+                alt=""
+              />
+            </Parallax>
+          </div>
         </div>
       </main>
     </div>

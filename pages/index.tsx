@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { ParallaxProvider } from "react-scroll-parallax";
+
 import Header from "./home/header";
 import Hero from "./home/hero";
 import About from "./home/about";
@@ -22,14 +24,16 @@ const HomePage = () => {
         />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
       </Head>
-      <Header />
-      <Hero />
-      <Mission />
-      <About />
-      <CounterSection />
-      <TeamSection />
-      <Contact />
-      <Footer />
+      <ParallaxProvider>
+        <Header />
+        <Hero />
+        <Mission />
+        <About />
+        <CounterSection />
+        <TeamSection />
+        <Contact />
+        <Footer />
+      </ParallaxProvider>
     </>
   );
 };
