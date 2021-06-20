@@ -16,6 +16,38 @@ import Image4 from "../../public/images/home/about/photo-4.jpg";
 import Image5 from "../../public/images/home/about/photo-5.jpg";
 import Image6 from "../../public/images/home/about/photo-6.jpg";
 
+type SliderImage = {
+  src: StaticImageData;
+  desc: string;
+};
+
+const SliderImages: SliderImage[] = [
+  {
+    src: Image1,
+    desc: "Adair Blanco travels to America to have a brain tumor treated",
+  },
+  {
+    src: Image2,
+    desc: "Dr. Joseph Peter, founder, at the International Food Festival fundraiser",
+  },
+  {
+    src: Image3,
+    desc: "Volunteer Kelley Humprhey raising money at the International Food Festival",
+  },
+  {
+    src: Image4,
+    desc: "300+ people attending the International Food Festival fundraiser",
+  },
+  {
+    src: Image5,
+    desc: "Volunteers serving peach barbecue to raise money for Operation Medical Care",
+  },
+  {
+    src: Image6,
+    desc: "The International Food Festival helped raise $3,340 for 2016's Operational Medical Care mission",
+  },
+];
+
 const About = () => {
   return (
     <div
@@ -34,132 +66,31 @@ const About = () => {
             loop={true}
             className="w-full h:h-[300px] md:h-[500px]"
           >
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image1}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    Adair Blanco travels to America to have a brain tumor
-                    treated
-                  </span>
+            {SliderImages.map((e, i) => (
+              <SwiperSlide className="flex px-12 pb-8" key={i}>
+                <div className="relative w-full h-full overflow-hidden rounded-md">
+                  <Image
+                    className="w-full h-full"
+                    src={e.src}
+                    layout="fill"
+                    objectFit="cover"
+                    priority={true}
+                    placeholder="blur"
+                    alt={e.desc}
+                  />
+                  <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
+                    <span
+                      className="text-xs leading-none text-white"
+                      style={{
+                        textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px",
+                      }}
+                    >
+                      {e.desc}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image2}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    Dr. Joseph Peter, founder, at the International Food
-                    Festival fundraiser
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image3}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    Volunteer Kelley Humprhey raising money at the International
-                    Food Festival
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image4}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    300+ people attending the International Food Festival
-                    fundraiser
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image5}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    Volunteers serving peacb barbecue to raise money for
-                    Operation Medical Care
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="flex px-12 pb-8">
-              <div className="relative w-full h-full overflow-hidden rounded-md">
-                <Image
-                  className="w-full h-full"
-                  src={Image6}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                  placeholder="blur"
-                />
-                <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                  <span
-                    className="text-xs leading-none text-white"
-                    style={{ textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px" }}
-                  >
-                    The International Food Festival helped raise $3,340 for
-                    2016's Operational Medical Care mission
-                  </span>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
