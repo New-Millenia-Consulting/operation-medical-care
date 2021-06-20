@@ -94,7 +94,7 @@ const Header = () => {
             <a>
               <span className="flex items-center justify-center">
                 <Image
-                  src="/images/home/plus.png"
+                  src="/images/home/plus.svg"
                   width={24}
                   height={24}
                   alt=""
