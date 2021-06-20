@@ -6,9 +6,9 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
+import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+SwiperCore.use([Pagination, Navigation]);
 
 const About = () => {
   return (
@@ -25,10 +25,6 @@ const About = () => {
             }}
             slidesPerView={1}
             centeredSlides={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
             loop={true}
             className="w-full h:h-[300px] md:h-[500px]"
           >
