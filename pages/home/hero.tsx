@@ -41,6 +41,8 @@ export default function Hero() {
               <Image
                 className="object-cover h-auto"
                 src={ImageChildren}
+                width={1024}
+                height={860}
                 placeholder="blur"
                 alt="3 Belizean children having fun"
               />
