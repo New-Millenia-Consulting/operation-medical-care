@@ -54,7 +54,7 @@ const About = () => {
       className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center"
       id="about"
     >
-      <div className="max-w-5xl">
+      <div className="max-w-3xl">
         <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
             navigation={true}
