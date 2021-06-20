@@ -1,9 +1,4 @@
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "5" },
-  { label: "Beta Users", value: "521" },
-  { label: "Raised", value: "$25M" },
-];
+import Image from "next/image";
 
 export default function section2() {
   return (
@@ -48,31 +43,29 @@ export default function section2() {
               />
             </svg>
           </div>
-          <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-            {/* Testimonial card*/}
-            <div className="relative pt-64 pb-10 overflow-hidden border-0 shadow-xl rounded-2xl">
-              <img
-                className="absolute inset-0 object-cover w-full h-full border-0"
-                src="/images/home/hero/OMC-Belize-Comms-blog-&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
-                alt=""
-              />
-              <div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
-              <div className="absolute inset-0 bg-gradient-to-t from-indigo-600 via-indigo-600 opacity-90" />
-              <div className="relative px-8 border-0">
-                <div>
-                  <img
-                    className="h-12"
-                    src="/images/home/hero/dreamstime_xxl_114898439.jpg"
-                    alt=""
-                  />
-                </div>
+          <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20 ">
+            <div
+              className="relative"
+              style={{ width: "560px", height: "350px" }}
+            >
+              {/* Honestly I don't know why we need this absolute inset-0 */}
+              {/* But if we don't have this wrapper then the image doesn't take up the entire height */}
+              <div className="absolute inset-0 overflow-hidden shadow rounded-2xl">
+                <Image
+                  src="/images/home/hero/dreamstime_xxl_114898439.jpg"
+                  width={560}
+                  height={350}
+                  objectFit="cover"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-indigo-500 bg-opacity-30 mix-blend-multiply" />
+                <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-indigo-600 via-indigo-600" />
               </div>
             </div>
           </div>
         </div>
 
         <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0">
-          {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               On a mission To<br></br>Help Those In&nbsp;Need
