@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,17 +6,17 @@ import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
-import { ChevronRightIcon } from "@heroicons/react/outline";
-
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const About = () => {
   return (
-    <div className="py-32 md:px-10 bg-blue-gray-50" id="about">
-      <div className="grid grid-cols-1 gap-16 justify-content: center lg:grid-cols-2 lg:gap-0">
-       
+    <div
+      className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center"
+      id="about"
+    >
+      <div className="max-w-5xl">
         <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
             navigation={true}
@@ -31,8 +30,7 @@ const About = () => {
               disableOnInteraction: false,
             }}
             loop={true}
-            className="w-full h-full"
-            style={{ height: "360px" }}
+            className="w-full h:h-[300px] md:h-[500px]"
           >
             <SwiperSlide className="flex px-12 pb-8">
               <div className="relative w-full h-full overflow-hidden rounded-md">
