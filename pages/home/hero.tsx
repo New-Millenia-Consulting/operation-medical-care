@@ -28,9 +28,9 @@ export default function Hero() {
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-                <span className="px-10 py-4 font-medium transition-all bg-white rounded shadow text-primary-500 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
+                <a className="px-10 py-4 font-medium transition-all bg-white rounded shadow text-primary-500 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
                   Donate!
-                </span>
+                </a>
               </Link>
             </div>
           </div>

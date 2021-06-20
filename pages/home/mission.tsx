@@ -90,7 +90,7 @@ export default function section2() {
               href="#"
               className="text-base font-medium transition-colors text-primary-600 hover:text-primary-300"
             >
-              Learn more about how we're changing the world{" "}
+              Learn more about how we&apos;re changing the world{" "}
               <span aria-hidden="true">&rarr;</span>{" "}
             </a>
           </div>

@@ -42,7 +42,7 @@ const Contact = () => {
       method: "POST",
       body: formData,
     })
-      .then((res) => {
+      .then(() => {
         reset();
         setSubmitBtnState("idle");
 
@@ -97,9 +97,9 @@ const Contact = () => {
                       aria-hidden="true"
                     />
                     <Link href="tel:850-974-7400">
-                      <span className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
+                      <a className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
                         +1 (850) 974-7400
-                      </span>
+                      </a>
                     </Link>
                   </dd>
                 </div>
@@ -111,9 +111,9 @@ const Contact = () => {
                       aria-hidden="true"
                     />
                     <Link href="mailto:operationmedicalcare@gmail.com">
-                      <span className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
+                      <a className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
                         operationmedicalcare@gmail.com
-                      </span>
+                      </a>
                     </Link>
                   </dd>
                 </div>

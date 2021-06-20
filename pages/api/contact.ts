@@ -32,7 +32,10 @@ Message: "${message.content}"`,
 const FROM_EMAIL = process.env.FROM_EMAIL ?? "noah.bresler@newmillenia.us";
 const TO_EMAIL = process.env.TO_EMAIL ?? "vishnu.sriram@newmillenia.us";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function ContactFunction(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method === "POST") {
     const contentType = req.headers["content-type"];
 
@@ -107,4 +110,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   } else {
     res.status(403).end(`${req.method} method not supported on this route`);
   }
-};
+}

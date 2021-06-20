@@ -24,6 +24,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
+              alt="Headshot image of Dr. Joseph Peter, M.D."
             />
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
@@ -50,6 +51,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
+              alt="Headshot image of Dr. John Johnson, M.D."
             />
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
@@ -63,10 +65,11 @@ const TeamSection = () => {
               Born in Crestview, Dr. John Johnson has always had a passion for
               medicine and health care. He graduated from Louisiana State
               University School of Medicine at Shreveport with a doctor of
-              medicine degree. Dr. Johnson's postgraduate studies involved a
-              three-year residency program in family practice at the University
-              of Alabama (Tuscaloosa Family Practice). In 1988, he earned his
-              board certification from the American Board of Family Practice.
+              medicine degree. Dr. Johnson&apos;s postgraduate studies involved
+              a three-year residency program in family practice at the
+              University of Alabama (Tuscaloosa Family Practice). In 1988, he
+              earned his board certification from the American Board of Family
+              Practice.
             </p>
           </div>
         </div>
@@ -78,6 +81,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
+              alt="Headshot image of Tom Streeter, O.D."
             />
           </div>
           <div className="flex flex-col flex-1 py-1 ml-8">
@@ -104,6 +108,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
+              alt="Headshot image of Sharlene Cox, Treasurer"
             />
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
@@ -139,6 +144,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
+              alt="Headshot image of Bernadine Peters, Health Coordinator and Dietician"
             />
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
