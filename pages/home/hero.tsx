@@ -21,8 +21,8 @@ export default function Hero() {
               className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl"
               style={{ lineHeight: "1.768" }}
             >
-              We are a non-profit made up of Medical Doctors, Nurses,
-              Pharmacists, Dietitians, Business Owners, Software Engineers and
+              We are a non-profit made up of medical doctors, nurses,
+              pharmacists, dietitians, business owners, software engineers and
               everyday people all committed to bringing healthcare to the remote
               villages of Belize.
             </p>
