@@ -58,8 +58,8 @@ export default function section2() {
                   objectFit="cover"
                   alt=""
                 />
-                <div className="absolute inset-0 bg-indigo-500 bg-opacity-30 mix-blend-multiply" />
-                <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-indigo-600 via-indigo-600" />
+                <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
+                <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
               </div>
             </div>
           </div>
@@ -85,8 +85,10 @@ export default function section2() {
           </div>
 
           <div className="mt-10">
-            <a href="#" className="text-base font-medium text-indigo-600">
-              {" "}
+            <a
+              href="#"
+              className="text-base font-medium transition-colors text-primary-600 hover:text-primary-300"
+            >
               Learn more about how we're changing the world{" "}
               <span aria-hidden="true">&rarr;</span>{" "}
             </a>
