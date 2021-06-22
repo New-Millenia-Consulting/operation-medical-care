@@ -34,3 +34,8 @@ h5 {
     "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
     sans-serif;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-color: theme("colors.blue.400");
+}

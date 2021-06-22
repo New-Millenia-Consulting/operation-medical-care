@@ -8,14 +8,14 @@ import ImageBernadine from "../../public/images/home/team/bernadine-peter.jpg";
 
 const TeamSection = () => {
   return (
-    <div className="px-8 py-20 m-auto max-w-7xl">
+    <div className="px-8 py-20 pb-6 m-auto max-w-7xl">
       <h2
         className="text-4xl font-bold text-center text-blue-gray-800 md:text-left"
         id="team"
       >
         Meet Our Board
       </h2>
-      <div className="grid grid-cols-1 gap-12 mt-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-16 mt-10 lg:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
@@ -123,20 +123,20 @@ const TeamSection = () => {
               for 13 years with much success. She helps to raise the necessary
               funds for the Operation Medical Care Team to travel to Belive for
               annual mission trips, with this next trip being her&nbsp;9th.
-              <br></br>
-              <br></br>
-              Cox has played an important role in many Crestview, Florida
+              {/* <br></br> */}
+              {/* <br></br> */}
+              {/* Cox has played an important role in many Crestview, Florida
               organizations over the years such as: 1895 Society Chairman at
               GFWC Florida, Youth Pillar Chairman at the Exchange Club of
               Crestview as well as the President of the Exchange Club of
               Crestview, and Treasurer of GFWC Woman’s Club of Crestview. Cox
               also owns her own catering business, Meme’s Specialities, which
               has delivered homemade catering to all size groups and functions
-              for over a decade.
+              for over a decade. */}
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:items-start">
+        <div className="flex flex-col items-center mt-0 md:flex-row md:items-start md:mt-[48px]">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageBernadine}

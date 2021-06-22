@@ -4,7 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 
 import ImageMap from "../../public/images/home/mission/dreamstime_xxl_114898439.jpg";
 
-export default function section2() {
+export default function Mission() {
   return (
     <div className="relative py-16 bg-white sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
@@ -72,11 +72,11 @@ export default function section2() {
 
         <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0">
           <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              On a mission To<br></br>Help Those In&nbsp;Need
+            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+              On a Mission to<br />Help Those In Need
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
-              <p className="text-lg">
+              <p className="pr-20">
                 Every year, we spent 8 days traveling to remote villages in
                 Belize. Our team of medical doctors, nurses, pharmacists,
                 dietians, business owners, software engineers, and kind everday
@@ -92,7 +92,7 @@ export default function section2() {
           <div className="mt-10">
             <a
               href="#"
-              className="text-base font-medium transition-colors text-primary-600 hover:text-primary-300"
+              className="text-base font-medium transition-colors text-primary-400 hover:text-primary-700"
             >
               Learn more about how we&apos;re changing the world{" "}
               <span aria-hidden="true">&rarr;</span>{" "}

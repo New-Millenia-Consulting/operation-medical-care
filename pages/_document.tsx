@@ -18,10 +18,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta
             name="description"
             content="Operation Medical Care is a non-profit made up of medical doctors, nurses, pharmacists, dietitians, business owners, software engineers and everyday people all committed to bringing healthcare to the remote villages of Belize."
           />
@@ -40,17 +36,13 @@ class MyDocument extends Document {
             property="og:image"
             content="https://operationmedicalcare.com/ogp.jpg"
           />
-          <meta
-            property="og:image:secure_url"
-            content="https://secure.example.com/ogp.jpg"
-          />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="650" />
 
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap"
             rel="stylesheet"
           />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg"></link>
