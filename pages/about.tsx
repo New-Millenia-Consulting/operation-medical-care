@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
+
 import { DownloadIcon } from "@heroicons/react/outline";
 
 import Header from "./home/header";
@@ -113,58 +115,65 @@ const AboutPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Header />
-      <div className="relative grid w-full pt-32 pb-24 place-items-center ">
-        <div className="absolute inset-0 overflow-hidden">
-          <Image
-            src={Picture7Upscale}
-            placeholder="blur"
-            objectFit="cover"
-            alt=""
+      <SimpleReactLightbox>
+        <div className="relative grid w-full pt-32 pb-24 place-items-center ">
+          <div className="absolute inset-0 overflow-hidden">
+            <Image
+              src={Picture7Upscale}
+              placeholder="blur"
+              objectFit="cover"
+              alt=""
+            />
+          </div>
+          <div
+            className="absolute inset-0 bg-gray-900 bg-opacity-80"
+            style={{ zIndex: 1 }}
           />
+          <h1
+            className="text-6xl font-normal tracking-normal text-white"
+            style={{ zIndex: 2 }}
+          >
+            About Us
+          </h1>
+          <div className="w-20 h-px my-6 bg-white" style={{ zIndex: 2 }}></div>
+          <p
+            className="max-w-3xl text-center text-gray-200"
+            style={{ zIndex: 2 }}
+          >
+            Every year, we spent 8 days traveling to remote villages in Belize.
+            Our team of medical doctors, nurses, pharmacists, dietians, business
+            owners, software engineers, and kind everday volunteers, treat over
+            900 patients and distribute much needed supplies to improve the
+            lives of those in need. We not only provide vital medical
+            necessities, but hats—to prevent glaucoma, toys, school supplies,
+            and everyday items that would otherwise be unaffordable.
+          </p>
+          <a
+            href="/files/BelizeTrip2018.pptx"
+            download
+            className="mt-10 text-lg font-medium tracking-wide text-blue-400"
+            style={{ zIndex: 2 }}
+          >
+            See our 2018 Mission Trip Powerpoint!{" "}
+            <DownloadIcon className="inline-block w-5 h-5 ml-1 -translate-y-px" />
+          </a>
         </div>
-        <div
-          className="absolute inset-0 bg-gray-900 bg-opacity-80"
-          style={{ zIndex: 1 }}
-        />
-        <h1
-          className="text-6xl font-normal tracking-normal text-white"
-          style={{ zIndex: 2 }}
-        >
-          About Us
-        </h1>
-        <div className="w-20 h-px my-6 bg-white" style={{ zIndex: 2 }}></div>
-        <p
-          className="max-w-3xl text-center text-gray-200"
-          style={{ zIndex: 2 }}
-        >
-          Every year, we spent 8 days traveling to remote villages in Belize.
-          Our team of medical doctors, nurses, pharmacists, dietians, business
-          owners, software engineers, and kind everday volunteers, treat over
-          900 patients and distribute much needed supplies to improve the lives
-          of those in need. We not only provide vital medical necessities, but
-          hats—to prevent glaucoma, toys, school supplies, and everyday items
-          that would otherwise be unaffordable.
-        </p>
-        <a
-          href="/files/BelizeTrip2018.pptx"
-          download
-          className="mt-10 text-lg font-medium tracking-wide text-blue-400"
-          style={{ zIndex: 2 }}
-        >
-          See our 2018 Mission Trip Powerpoint!{" "}
-          <DownloadIcon className="inline-block w-5 h-5 ml-1 -translate-y-px" />
-        </a>
-      </div>
 
-      <main className="p-4 m-auto max-w-7xl">
-        <div className="grid w-full grid-cols-4 gap-4">
-          {Images.map((e, i) => (
-            <div key={i} className="flex overflow-hidden bg-gray-300 h-72">
-              <Image src={e} alt="" placeholder="blur" objectFit="cover" />
+        <main className="p-4 m-auto max-w-7xl">
+          <SRLWrapper>
+            <div className="grid w-full grid-cols-4 gap-4">
+              {Images.map((e, i) => (
+                <div
+                  key={i}
+                  className="flex overflow-hidden bg-gray-300 h-72 hover:cursor-pointer"
+                >
+                  <Image src={e} alt="" placeholder="blur" objectFit="cover" />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </main>
+          </SRLWrapper>
+        </main>
+      </SimpleReactLightbox>
     </>
   );
 };
