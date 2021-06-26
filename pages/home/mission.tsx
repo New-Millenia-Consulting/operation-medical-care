@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Parallax } from "react-scroll-parallax";
 
@@ -73,7 +74,9 @@ export default function Mission() {
         <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0">
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
-              On a Mission to<br />Help Those In Need
+              On a Mission to
+              <br />
+              Help Those In Need
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="pr-20">
@@ -90,13 +93,12 @@ export default function Mission() {
           </div>
 
           <div className="mt-10">
-            <a
-              href="#"
-              className="text-base font-medium transition-colors text-primary-400 hover:text-primary-700"
-            >
-              Learn more about how we&apos;re changing the world{" "}
-              <span aria-hidden="true">&rarr;</span>{" "}
-            </a>
+            <Link href="/about">
+              <a className="text-base font-medium transition-colors text-primary-400 hover:text-primary-700">
+                Learn more about how we&apos;re changing the world{" "}
+                <span aria-hidden="true">&rarr;</span>{" "}
+              </a>
+            </Link>
           </div>
         </div>
       </div>
