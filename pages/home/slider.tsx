@@ -24,7 +24,7 @@ type SliderImage = {
 const SliderImages: SliderImage[] = [
   {
     src: Image3,
-    desc: "???",
+    desc: "",
   },
   {
     src: Image1,
@@ -36,20 +36,17 @@ const SliderImages: SliderImage[] = [
   },
   {
     src: Image4,
-    desc: "??",
+    desc: "",
   },
   {
     src: Image5,
-    desc: "???",
+    desc: "",
   },
 ];
 
 const Slider = () => {
   return (
-    <div
-      className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center"
-      id="about"
-    >
+    <div className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center">
       <div className="max-w-3xl">
         <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
@@ -74,16 +71,18 @@ const Slider = () => {
                     placeholder="blur"
                     alt={e.desc}
                   />
-                  <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
-                    <span
-                      className="text-xs leading-none text-white"
-                      style={{
-                        textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px",
-                      }}
-                    >
-                      {e.desc}
-                    </span>
-                  </div>
+                  {e.desc.length > 0 && (
+                    <div className="absolute bottom-0 flex items-center w-full h-10 px-3 bg-gray-900 border-t border-gray-400 bg-opacity-60">
+                      <span
+                        className="text-xs leading-none text-white"
+                        style={{
+                          textShadow: "rgb(255 255 255 / 30%) 2px 2px 3px",
+                        }}
+                      >
+                        {e.desc}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </SwiperSlide>
             ))}
