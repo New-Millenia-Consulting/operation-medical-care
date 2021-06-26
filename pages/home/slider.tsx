@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -47,7 +48,7 @@ const SliderImages: SliderImage[] = [
 const Slider = () => {
   return (
     <div className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center">
-      <div className="max-w-3xl">
+      <div className="flex flex-col items-center max-w-3xl">
         <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
             navigation={true}
@@ -87,6 +88,16 @@ const Slider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+        <div className="mt-10">
+          <Link href="/about">
+            <a className="text-base font-medium transition-colors text-primary-400 hover:text-primary-700">
+              See more of our adventures!{" "}
+              <span aria-hidden="true" className="ml-1">
+                &rarr;
+              </span>{" "}
+            </a>
+          </Link>
         </div>
       </div>
     </div>
