@@ -10,6 +10,7 @@ import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
+  { name: "Team", href: "/#team" },
   { name: "Contact", href: "/#contact" },
 ];
 
