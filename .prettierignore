@@ -3,3 +3,4 @@ font
 build
 coverage
 node-modules
+*.pptx
