@@ -24,6 +24,7 @@
     "react-hook-form": "^7.8.8",
     "react-intersection-observer": "^8.32.0",
     "react-scroll-parallax": "^2.4.0",
+    "simple-react-lightbox": "^3.6.6",
     "smoothscroll-polyfill": "^0.4.4",
     "swiper": "^6.7.0"
   },
