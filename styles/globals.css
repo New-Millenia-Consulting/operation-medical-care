@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background: #f9fafb;
+}
+
 h1,
 h2,
 h3,
@@ -29,4 +33,9 @@ h5 {
   font-family: "Ubuntu", system, -apple-system, ".SFNSText-Regular",
     "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande",
     sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-color: theme("colors.blue.400");
 }

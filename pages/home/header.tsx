@@ -8,9 +8,10 @@ import smoothscroll from "smoothscroll-polyfill";
 import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Team", href: "/team" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 const HeaderTopbar = () => {
@@ -89,12 +90,24 @@ const Header = () => {
     >
       <HeaderTopbar />
       <nav className="flex flex-row items-center justify-center w-full max-w-6xl py-5 md:justify-between px-7">
-        <h1 className="text-2xl font-bold tracking-tighter text-blue-500">
+        <h1 className="text-2xl font-bold tracking-tighter ">
           <Link href="/">
-            <span className="flex items-center justify-center">
-              <Image src="/images/home/plus.png" width={24} height={24} />{" "}
-              <span className="ml-2">Operation Medical Care</span>
-            </span>
+            <a>
+              <span className="flex items-center justify-center">
+                <Image
+                  src="/images/home/plus.svg"
+                  width={24}
+                  height={24}
+                  alt=""
+                />{" "}
+                <span
+                  className="ml-2 font-normal text-green-600 "
+                  style={{ letterSpacing: ".5px" }}
+                >
+                  Operation Medical Care
+                </span>
+              </span>
+            </a>
           </Link>
         </h1>
         <ul className="flex-row hidden space-x-5 md:flex">
