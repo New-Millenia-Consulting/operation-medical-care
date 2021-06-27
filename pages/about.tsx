@@ -6,6 +6,7 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import { DownloadIcon } from "@heroicons/react/outline";
 
 import Header from "./home/header";
+import Footer from "./home/footer";
 
 import Picture1 from "../public/images/Picture1.png";
 import Picture2 from "../public/images/Picture2.png";
@@ -159,7 +160,7 @@ const AboutPage = () => {
           </a>
         </div>
 
-        <main className="p-4 m-auto max-w-7xl">
+        <main className="p-4 pb-24 m-auto max-w-7xl">
           <SRLWrapper>
             <div className="grid w-full grid-cols-4 gap-4">
               {Images.map((e, i) => (
@@ -174,6 +175,7 @@ const AboutPage = () => {
           </SRLWrapper>
         </main>
       </SimpleReactLightbox>
+      <Footer />
     </>
   );
 };

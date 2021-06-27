@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 
-import { ArrowSmUpIcon } from '@heroicons/react/outline';
+import { ArrowSmUpIcon } from "@heroicons/react/outline";
 
 import Header from "./home/header";
 import Hero from "./home/hero";
@@ -19,36 +19,38 @@ const FAB = () => {
 
   useEffect(() => {
     const onScroll = (e) => {
-      const scrollPercentage = (window.pageYOffset + window.innerHeight) / document.documentElement.offsetHeight;
+      const scrollPercentage =
+        (window.pageYOffset + window.innerHeight) /
+        document.documentElement.offsetHeight;
 
       setIsShowing(scrollPercentage > 0.5);
-    }
-    
+    };
+
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+  }, []);
 
   return (
-    <a href="#top" className={`
+    <a
+      href="#top"
+      className={`
       fixed p-2 transition-all rounded-full shadow-md bottom-4 right-8
       bg-primary-500 hover:bg-primary-700 transform
-      ${isShowing ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'}
-    `}>
+      ${isShowing ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"}
+    `}
+    >
       <ArrowSmUpIcon className="w-8 h-8 text-white" />
     </a>
-  )
-}
+  );
+};
 
 const HomePage = () => {
   return (
     <>
       <Head>
         <title>Operation Medical Care</title>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div id="top"></div>
       <ParallaxProvider>
@@ -58,6 +60,13 @@ const HomePage = () => {
         <Slider />
         <CounterSection />
         <TeamSection />
+        <div className="w-full px-8 py-5 bg-blue-700">
+          <p className="max-w-2xl m-auto text-center text-white">
+            Due to circumstances surrounding COVID-19 pandemic and the safety of
+            our patients, Operation Medical Care will resume in September of
+            2022
+          </p>
+        </div>
         <Contact />
         <Footer />
         <FAB />
