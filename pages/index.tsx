@@ -18,7 +18,7 @@ const FAB = () => {
   const [isShowing, setIsShowing] = useState(false);
 
   useEffect(() => {
-    const onScroll = (e) => {
+    const onScroll = () => {
       const scrollPercentage =
         (window.pageYOffset + window.innerHeight) /
         document.documentElement.offsetHeight;
