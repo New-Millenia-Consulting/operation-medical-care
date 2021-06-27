@@ -56,7 +56,7 @@ import Picture45 from "../public/images/Picture45.png";
 import Picture46 from "../public/images/Picture46.png";
 import Picture47 from "../public/images/Picture47.png";
 
-import Picture7Upscale from "../public/images/Picture7-2.png";
+// import Picture7Upscale from "../public/images/Picture7-2.png";
 
 const Images = [
   Picture1,
@@ -119,12 +119,7 @@ const AboutPage = () => {
       <SimpleReactLightbox>
         <div className="relative grid w-full pt-32 pb-24 place-items-center ">
           <div className="absolute inset-0 overflow-hidden">
-            <Image
-              src={Picture7Upscale}
-              placeholder="blur"
-              objectFit="cover"
-              alt=""
-            />
+            <Image src={Picture7} placeholder="blur" objectFit="cover" alt="" />
           </div>
           <div
             className="absolute inset-0 bg-gray-900 bg-opacity-80"
