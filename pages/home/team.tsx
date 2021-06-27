@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import ImagePeter from "../../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../../public/images/home/team/john-johnson.jpg";
@@ -8,12 +9,12 @@ import ImageBernadine from "../../public/images/home/team/bernadine-peter.jpg";
 
 const TeamSection = () => {
   return (
-    <div className="px-8 py-20 pb-6 m-auto max-w-7xl">
+    <div className="px-8 py-20 pb-16 m-auto max-w-7xl">
       <h2
         className="text-4xl font-bold text-center text-blue-gray-800 md:text-left"
         id="team"
       >
-        Meet Our Board
+        Meet Our Leadership
       </h2>
       <div className="grid grid-cols-1 gap-16 mt-10 lg:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
@@ -166,6 +167,16 @@ const TeamSection = () => {
               provided care for thousands of uninsured and underserved children.
             </p>
           </div>
+        </div>
+        <div className="place-self-center">
+          <Link href="/team">
+            <a className="text-lg font-medium transition-colors text-primary-400 hover:text-primary-700">
+              See the rest of our team!{" "}
+              <span aria-hidden="true" className="ml-1">
+                &rarr;
+              </span>{" "}
+            </a>
+          </Link>
         </div>
       </div>
     </div>
