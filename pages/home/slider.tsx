@@ -58,10 +58,10 @@ const Slider = () => {
             slidesPerView={1}
             centeredSlides={true}
             loop={true}
-            className="w-full h:h-[300px] md:h-[500px]"
+            className="w-full h-[400px] md:h-[500px]"
           >
             {SliderImages.map((e, i) => (
-              <SwiperSlide className="flex px-12 pb-8" key={i}>
+              <SwiperSlide className="flex px-0 pb-8 md:px-12" key={i}>
                 <div className="relative w-full h-full overflow-hidden rounded-md">
                   <Image
                     className="w-full h-full"
