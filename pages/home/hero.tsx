@@ -5,7 +5,7 @@ import ImageChildren from "../../public/images/home/hero/Operation-Medical-Care-
 
 export default function Hero() {
   return (
-    <main className="relative grid w-full grid-cols-1 pt-12 pb-20 mx-auto text-center lg:grid-cols-2 max-w-7xl lg:py-16 lg:text-left isolate">
+    <main className="relative grid w-full grid-cols-1 pt-12 pb-20 mx-auto text-center lg:grid-cols-2 max-w-7xl lg:py-16 lg:text-left isolate mt-14 md:mt-0">
       <div className="z-10 px-2 lg:px-16 sm:px-8">
         <h1 className="mt-8 text-4xl font-medium tracking-tight text-white lg:mb-6 lg:mt-0 lg:font-normal lg:text-black sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
           Providing Care
