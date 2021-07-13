@@ -9,10 +9,10 @@ export default function Mission() {
   return (
     <div className="relative py-16 bg-white sm:py-24">
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
-        <div className="relative sm:py-16 lg:py-0">
+        <div className="relative hidden h-full sm:py-16 lg:py-0 lg:block">
           <div
             aria-hidden="true"
-            className="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
+            className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen"
           >
             <div className="absolute inset-y-0 w-full right-1/2 bg-gray-50 rounded-r-3xl lg:right-72" />
             <svg
@@ -48,38 +48,37 @@ export default function Mission() {
               />
             </svg>
           </div>
-          <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20 ">
-            <Parallax y={[-20, 20]}>
-              <div
-                className="relative"
-                style={{ width: "560px", height: "350px" }}
-              >
-                {/* Honestly I don't know why we need this absolute inset-0 */}
-                {/* But if we don't have this wrapper then the image doesn't take up the entire height */}
-                <div className="absolute inset-0 overflow-hidden shadow rounded-2xl">
-                  <Image
-                    src={ImageMap}
-                    objectFit="cover"
-                    placeholder="blur"
-                    alt="Belize on a map"
-                  />
-                  <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
-                  <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
-                </div>
+          <div className="relative h-full max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+            <Parallax
+              y={[-20, 20]}
+              className="w-full h-full"
+              styleInner={{ width: "100%", height: "100%" }}
+            >
+              <div className="relative w-full h-full overflow-hidden shadow rounded-2xl">
+                <Image
+                  className="w-full h-full"
+                  src={ImageMap}
+                  objectFit="cover"
+                  placeholder="blur"
+                  layout="fill"
+                  alt="Belize on a map"
+                />
+                <div className="absolute inset-0 bg-primary-500 bg-opacity-30 mix-blend-multiply" />
+                <div className="absolute inset-0 opacity-50 bg-gradient-to-t from-primary-600 via-primary-600" />
               </div>
             </Parallax>
           </div>
         </div>
 
         <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0">
-          <div className="pt-12 sm:pt-16 lg:pt-20">
-            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+          <div className="lg:pt-20">
+            <h2 className="text-3xl font-medium tracking-tight text-center text-gray-900 sm:text-4xl lg:text-left">
               On a Mission to
               <br />
               Help Those In Need
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
-              <p className="pr-20">
+              <p className="text-center lg:pr-20 lg:text-left">
                 Every year, we spent 8 days traveling to remote villages in
                 Belize. Our team of medical doctors, nurses, pharmacists,
                 dietians, business owners, software engineers, and kind everday
@@ -92,7 +91,7 @@ export default function Mission() {
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 text-center lg:text-left">
             <Link href="/about">
               <a className="text-base font-medium transition-colors text-primary-400 hover:text-primary-700">
                 Learn more about how we&apos;re changing the world{" "}

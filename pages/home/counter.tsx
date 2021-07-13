@@ -45,25 +45,25 @@ const CounterSection = () => {
     <div className="grid py-20 bg-primary-800" ref={sectionRef}>
       <div className="m-auto max-w-screen-2xl">
         <div className="relative grid w-full grid-cols-2 gap-12 lg:divide-x lg:grid-cols-4 lg:divide-gray-50 lg:divide-opacity-50 lg:gap-0">
-          <div className="flex flex-col items-center justify-center w-72">
+          <div className="flex flex-col items-center justify-center lg:px-8">
             <span className="text-4xl font-bold md:text-6xl text-gray-50">
               ${countUpDonations}k+
             </span>
             <span className="text-primary-200">In Donations</span>
           </div>
-          <div className="flex flex-col items-center justify-center w-72">
+          <div className="flex flex-col items-center justify-center lg:px-8">
             <span className="text-4xl font-bold md:text-6xl text-gray-50">
               {countUpVolunteers}+
             </span>
             <span className="text-primary-200">Volunteers</span>
           </div>
-          <div className="flex flex-col items-center justify-center w-72">
+          <div className="flex flex-col items-center justify-center lg:px-8">
             <span className="text-4xl font-bold md:text-6xl text-gray-50">
               {countUpMissions}+
             </span>
             <span className="text-primary-200">Missions</span>
           </div>
-          <div className="flex flex-col items-center justify-center w-72">
+          <div className="flex flex-col items-center justify-center lg:px-8">
             <span className="text-4xl font-bold md:text-6xl text-gray-50">
               {countUpPatients}k+
             </span>

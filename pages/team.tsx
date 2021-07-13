@@ -23,7 +23,7 @@ const TeamPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Header />
-      <div className="relative grid w-full py-36 place-items-center">
+      <div className="relative grid w-full py-24 md:py-36 place-items-center mt-14 md:mt-0">
         <div className="absolute inset-0 overflow-hidden">
           <Image
             src={Picture46}
@@ -39,13 +39,16 @@ const TeamPage = () => {
           style={{ zIndex: 1 }}
         />
         <h1
-          className="text-6xl font-normal tracking-normal text-white"
+          className="text-4xl font-normal tracking-normal text-white sm:text-5xl md:text-6xl"
           style={{ zIndex: 2 }}
         >
           Our Team
         </h1>
         <div className="w-20 h-px my-6 bg-white" style={{ zIndex: 2 }}></div>
-        <p className="text-lg text-center text-gray-200" style={{ zIndex: 2 }}>
+        <p
+          className="px-5 text-lg text-center text-gray-200"
+          style={{ zIndex: 2 }}
+        >
           Meet our awesome team of physicians,
           <br />
           nurses, and virtuous volunteers from all over!
@@ -55,7 +58,7 @@ const TeamPage = () => {
         {/* Leadership */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-4xl font-bold text-center text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Leadership
@@ -222,7 +225,7 @@ const TeamPage = () => {
         {/* Doctors */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-4xl font-bold text-center text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Doctors
@@ -345,7 +348,7 @@ const TeamPage = () => {
         {/* Nurses/Volunteers */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-4xl font-bold text-center text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Nurses & Volunteers
