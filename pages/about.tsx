@@ -195,14 +195,13 @@ const AboutPage = () => {
                 >
                   <Image
                     src={e}
-                    width={300}
-                    height={300}
                     placeholder="blur"
                     blurDataURL={`data:image/svg+xml;base64,${toBase64(
                       shimmer(300, 300)
                     )}`}
                     alt=""
                     objectFit="cover"
+                    layout="fill"
                   />
                 </div>
               ))}
