@@ -1,7 +1,7 @@
 {
   "functions": {
-    "pages/api/contact.js": {
-      "excludeFiles": "public/**"
+    "pages/api/contact.ts": {
+      "excludeFiles": "public/**/*"
     }
   }
 }
