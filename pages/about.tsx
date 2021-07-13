@@ -191,7 +191,7 @@ const AboutPage = () => {
               {Images.map((e, i) => (
                 <div
                   key={i}
-                  className="flex overflow-hidden bg-gray-300 h-72 hover:cursor-pointer"
+                  className="relative flex overflow-hidden bg-gray-300 h-72 hover:cursor-pointer"
                 >
                   <Image
                     src={e}
