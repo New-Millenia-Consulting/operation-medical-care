@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/contact.js": {
+    "pages/api/contact.js": {
       "excludeFiles": "public/**"
     }
   }
