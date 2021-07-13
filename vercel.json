@@ -1,7 +1,0 @@
-{
-  "functions": {
-    "pages/api/contact.ts": {
-      "excludeFiles": "public/images/**/*"
-    }
-  }
-}
