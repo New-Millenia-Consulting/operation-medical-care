@@ -8,53 +8,54 @@ import { DownloadIcon } from "@heroicons/react/outline";
 import Header from "./home/header";
 import Footer from "./home/footer";
 
-import Picture1 from "../public/images/Picture1.png";
-import Picture2 from "../public/images/Picture2.png";
-import Picture3 from "../public/images/Picture3.png";
-import Picture4 from "../public/images/Picture4.png";
-import Picture5 from "../public/images/Picture5.png";
-import Picture6 from "../public/images/Picture6.png";
-import Picture7 from "../public/images/Picture7.png";
-import Picture8 from "../public/images/Picture8.png";
-import Picture9 from "../public/images/Picture9.png";
-import Picture10 from "../public/images/Picture10.png";
-import Picture11 from "../public/images/Picture11.png";
-import Picture12 from "../public/images/Picture12.png";
-import Picture13 from "../public/images/Picture13.png";
-import Picture14 from "../public/images/Picture14.png";
-import Picture15 from "../public/images/Picture15.png";
-import Picture16 from "../public/images/Picture16.png";
-import Picture17 from "../public/images/Picture17.png";
-import Picture18 from "../public/images/Picture18.png";
-import Picture19 from "../public/images/Picture19.png";
-import Picture20 from "../public/images/Picture20.png";
-import Picture21 from "../public/images/Picture21.png";
-import Picture22 from "../public/images/Picture22.png";
-import Picture23 from "../public/images/Picture23.png";
-import Picture24 from "../public/images/Picture24.png";
-import Picture25 from "../public/images/Picture25.png";
-import Picture26 from "../public/images/Picture26.png";
-import Picture27 from "../public/images/Picture27.png";
-import Picture28 from "../public/images/Picture28.png";
-import Picture29 from "../public/images/Picture29.png";
-import Picture30 from "../public/images/Picture30.png";
-import Picture31 from "../public/images/Picture31.png";
-import Picture32 from "../public/images/Picture32.png";
-import Picture33 from "../public/images/Picture33.png";
-import Picture34 from "../public/images/Picture34.png";
-import Picture35 from "../public/images/Picture35.png";
-import Picture36 from "../public/images/Picture36.png";
-import Picture37 from "../public/images/Picture37.png";
-import Picture38 from "../public/images/Picture38.png";
-import Picture39 from "../public/images/Picture39.png";
-import Picture40 from "../public/images/Picture40.png";
-import Picture41 from "../public/images/Picture41.png";
-import Picture42 from "../public/images/Picture42.png";
-import Picture43 from "../public/images/Picture43.png";
-import Picture44 from "../public/images/Picture44.png";
-import Picture45 from "../public/images/Picture45.png";
-import Picture46 from "../public/images/Picture46.png";
-import Picture47 from "../public/images/Picture47.png";
+// Do not inline these into the array so we can do static imports later when vercel fixes their issue
+const Picture1 = "/images/Picture1.png";
+const Picture2 = "/images/Picture2.png";
+const Picture3 = "/images/Picture3.png";
+const Picture4 = "/images/Picture4.png";
+const Picture5 = "/images/Picture5.png";
+const Picture6 = "/images/Picture6.png";
+const Picture7 = "/images/Picture7.png";
+const Picture8 = "/images/Picture8.png";
+const Picture9 = "/images/Picture9.png";
+const Picture10 = "/images/Picture10.png";
+const Picture11 = "/images/Picture11.png";
+const Picture12 = "/images/Picture12.png";
+const Picture13 = "/images/Picture13.png";
+const Picture14 = "/images/Picture14.png";
+const Picture15 = "/images/Picture15.png";
+const Picture16 = "/images/Picture16.png";
+const Picture17 = "/images/Picture17.png";
+const Picture18 = "/images/Picture18.png";
+const Picture19 = "/images/Picture19.png";
+const Picture20 = "/images/Picture20.png";
+const Picture21 = "/images/Picture21.png";
+const Picture22 = "/images/Picture22.png";
+const Picture23 = "/images/Picture23.png";
+const Picture24 = "/images/Picture24.png";
+const Picture25 = "/images/Picture25.png";
+const Picture26 = "/images/Picture26.png";
+const Picture27 = "/images/Picture27.png";
+const Picture28 = "/images/Picture28.png";
+const Picture29 = "/images/Picture29.png";
+const Picture30 = "/images/Picture30.png";
+const Picture31 = "/images/Picture31.png";
+const Picture32 = "/images/Picture32.png";
+const Picture33 = "/images/Picture33.png";
+const Picture34 = "/images/Picture34.png";
+const Picture35 = "/images/Picture35.png";
+const Picture36 = "/images/Picture36.png";
+const Picture37 = "/images/Picture37.png";
+const Picture38 = "/images/Picture38.png";
+const Picture39 = "/images/Picture39.png";
+const Picture40 = "/images/Picture40.png";
+const Picture41 = "/images/Picture41.png";
+const Picture42 = "/images/Picture42.png";
+const Picture43 = "/images/Picture43.png";
+const Picture44 = "/images/Picture44.png";
+const Picture45 = "/images/Picture45.png";
+const Picture46 = "/images/Picture46.png";
+const Picture47 = "/images/Picture47.png";
 
 // import Picture7Upscale from "../public/images/Picture7-2.png";
 
@@ -121,9 +122,9 @@ const AboutPage = () => {
           <div className="absolute inset-0 overflow-hidden">
             <Image
               src={Picture7}
-              placeholder="blur"
+              width={300}
+              height={300}
               objectFit="cover"
-              layout="fill"
               alt=""
             />
           </div>
@@ -170,7 +171,13 @@ const AboutPage = () => {
                   key={i}
                   className="flex overflow-hidden bg-gray-300 h-72 hover:cursor-pointer"
                 >
-                  <Image src={e} alt="" placeholder="blur" objectFit="cover" />
+                  <Image
+                    src={e}
+                    width={300}
+                    height={300}
+                    alt=""
+                    objectFit="cover"
+                  />
                 </div>
               ))}
             </div>
