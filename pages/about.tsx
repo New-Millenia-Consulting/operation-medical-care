@@ -117,23 +117,29 @@ const AboutPage = () => {
       </Head>
       <Header />
       <SimpleReactLightbox>
-        <div className="relative grid w-full pt-32 pb-24 place-items-center ">
+        <div className="relative grid w-full pt-32 pb-24 place-items-center mt-14 md:mt-0">
           <div className="absolute inset-0 overflow-hidden">
-            <Image src={Picture7} placeholder="blur" objectFit="cover" alt="" />
+            <Image
+              src={Picture7}
+              placeholder="blur"
+              objectFit="cover"
+              layout="fill"
+              alt=""
+            />
           </div>
           <div
             className="absolute inset-0 bg-gray-900 bg-opacity-80"
             style={{ zIndex: 1 }}
           />
           <h1
-            className="text-6xl font-normal tracking-normal text-white"
+            className="text-4xl font-normal tracking-normal text-white sm:text-5xl md:text-6xl"
             style={{ zIndex: 2 }}
           >
             About Us
           </h1>
           <div className="w-20 h-px my-6 bg-white" style={{ zIndex: 2 }}></div>
           <p
-            className="max-w-3xl text-center text-gray-200"
+            className="max-w-3xl px-4 text-sm text-center text-gray-200 md:text-base"
             style={{ zIndex: 2 }}
           >
             Every year, we spent 8 days traveling to remote villages in Belize.
@@ -145,19 +151,20 @@ const AboutPage = () => {
             and everyday items that would otherwise be unaffordable.
           </p>
           <a
-            href="/files/BelizeTrip2018.pptx"
+            href="https://www.dropbox.com/scl/fi/852dybe6tsapdcf56nomi/Belize-Trip-2018-Final.pptx?dl=1&rlkey=cvwiosihr69n16doxr54ci7gq"
             download
-            className="mt-10 text-lg font-medium tracking-wide text-blue-400"
+            className="mt-10 text-base font-medium tracking-wide text-center text-blue-300 md:text-lg"
             style={{ zIndex: 2 }}
           >
-            See our 2018 Mission Trip Powerpoint!{" "}
+            See our 2018 Mission
+            <br className="md:hidden" /> Trip Powerpoint!{" "}
             <DownloadIcon className="inline-block w-5 h-5 ml-1 -translate-y-px" />
           </a>
         </div>
 
         <main className="p-4 pb-24 m-auto max-w-7xl">
           <SRLWrapper>
-            <div className="grid w-full grid-cols-4 gap-4">
+            <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {Images.map((e, i) => (
                 <div
                   key={i}
