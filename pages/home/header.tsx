@@ -76,7 +76,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    console.log(router.pathname);
+    navigation.forEach((e) => (e.current = false));
     switch (router.pathname) {
       case "/":
         navigation[0].current = true;
@@ -147,7 +147,11 @@ const Header = () => {
               {navigation.map((item) => (
                 <li
                   key={item.name}
-                  className="text-gray-600 transition-colors hover:text-primary-500"
+                  className={` transition-colors ${
+                    item.current
+                      ? "text-primary-500 hover:text-primary-700"
+                      : "text-gray-600 hover:text-primary-500"
+                  }`}
                 >
                   <a href={item.href} onClick={anchorLinkClick}>
                     {item.name}
@@ -166,7 +170,7 @@ const Header = () => {
               leaveTo="opacity-0"
             >
               <div
-                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-4 bg-white sm:hidden top-14 ${
+                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-4 bg-white md:hidden top-14 ${
                   open
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 pointer-events-none -translate-y-3"
