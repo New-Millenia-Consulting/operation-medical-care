@@ -120,13 +120,7 @@ const AboutPage = () => {
       <SimpleReactLightbox>
         <div className="relative grid w-full pt-32 pb-24 place-items-center mt-14 md:mt-0">
           <div className="absolute inset-0 overflow-hidden">
-            <Image
-              src={Picture7}
-              width={300}
-              height={300}
-              objectFit="cover"
-              alt=""
-            />
+            <Image src={Picture7} objectFit="cover" layout="fill" alt="" />
           </div>
           <div
             className="absolute inset-0 bg-gray-900 bg-opacity-80"
