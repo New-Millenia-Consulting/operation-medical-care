@@ -48,7 +48,7 @@ const SliderImages: SliderImage[] = [
 const Slider = () => {
   return (
     <div className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center">
-      <div className="flex flex-col items-center max-w-3xl">
+      <div className="flex flex-col items-center w-full md:max-w-3xl">
         <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
           <Swiper
             navigation={true}
@@ -62,7 +62,7 @@ const Slider = () => {
           >
             {SliderImages.map((e, i) => (
               <SwiperSlide className="flex px-0 pb-8 md:px-12" key={i}>
-                <div className="relative w-full h-full overflow-hidden rounded-md">
+                <div className="relative w-screen h-full overflow-hidden rounded-md md:w-full">
                   <Image
                     className="w-full h-full"
                     src={e.src}
