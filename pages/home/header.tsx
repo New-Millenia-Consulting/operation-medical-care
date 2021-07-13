@@ -113,7 +113,7 @@ const Header = () => {
         className="relative flex flex-row items-center justify-center w-full max-w-6xl py-4 md:py-5 md:justify-between px-7"
       >
         {({ open }) => (
-          <>
+          <Fragment>
             <div className="absolute inset-y-0 flex items-center left-4 md:hidden">
               {/* Mobile menu button*/}
               <Disclosure.Button className="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -195,7 +195,7 @@ const Header = () => {
                 ))}
               </div>
             </Transition>
-          </>
+          </Fragment>
         )}
       </Disclosure>
     </div>
