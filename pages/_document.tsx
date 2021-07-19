@@ -21,7 +21,6 @@ class MyDocument extends Document {
             name="description"
             content="Operation Medical Care is a non-profit made up of medical doctors, nurses, pharmacists, dietitians, business owners, software engineers and everyday people all committed to bringing healthcare to the remote villages of Belize."
           />
-
           <meta
             property="og:url"
             content="https://www.operationmedicalcare.org/images/opengraph/og-image-1.jpg"
@@ -39,8 +38,10 @@ class MyDocument extends Document {
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="650" />
-
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter"
+            rel="stylesheet"
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700;800&display=swap"
             rel="stylesheet"
