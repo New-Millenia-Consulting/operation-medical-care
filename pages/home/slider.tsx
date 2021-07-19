@@ -68,7 +68,6 @@ const Slider = () => {
                     src={e.src}
                     layout="fill"
                     objectFit="cover"
-                    priority={true}
                     placeholder="blur"
                     alt={e.desc}
                   />
