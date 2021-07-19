@@ -80,7 +80,7 @@ const TeamPage = () => {
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                   Joesph Peter, M.D.
                 </h3>
-                <h4 className="text-lg font-semibold text-center text-primary-500 md:text-left">
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
                   Founder - Pediatrician
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -108,7 +108,7 @@ const TeamPage = () => {
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                   John Johnson, M.D.
                 </h3>
-                <h4 className="text-lg font-semibold text-center text-primary-500 md:text-left">
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
                   Family Medicine
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -138,7 +138,7 @@ const TeamPage = () => {
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                   Tom Streeter, O.D.
                 </h3>
-                <h4 className="text-lg font-semibold text-center text-primary-500 md:text-left">
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
                   Optometrist
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -166,7 +166,7 @@ const TeamPage = () => {
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                   Sharlene Cox
                 </h3>
-                <h4 className="text-lg font-semibold text-center text-primary-500 md:text-left">
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
                   Treasurer
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -203,7 +203,7 @@ const TeamPage = () => {
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                   Bernadine Peter
                 </h3>
-                <h4 className="text-lg font-semibold text-center text-primary-500 md:text-left">
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
                   Health Coordinator & Dietician
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
