@@ -33,6 +33,7 @@ const FAB = () => {
 
   return (
     <a
+      aria-label="Scroll to top"
       href="#top"
       className={`
       fixed p-2 transition-all rounded-full shadow-md bottom-4 right-8

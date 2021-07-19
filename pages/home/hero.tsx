@@ -18,7 +18,7 @@ export default function Hero() {
           all committed to bringing healthcare to the remote villages of Belize.
         </p>
         <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-          <a className="inline-block px-10 py-4 font-medium transition-all bg-white rounded shadow lg:mt-8 text-primary-500 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
+          <a className="inline-block px-10 py-4 font-medium transition-all bg-white rounded shadow lg:mt-8 text-primary-600 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
             Donate!
           </a>
         </Link>

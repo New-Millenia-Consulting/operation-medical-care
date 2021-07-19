@@ -39,7 +39,7 @@ class MyDocument extends Document {
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="650" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter"
+            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
             rel="stylesheet"
           />
           <link
