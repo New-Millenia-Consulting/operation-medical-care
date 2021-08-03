@@ -135,7 +135,7 @@ const AboutPage = () => {
             className="text-4xl font-normal tracking-normal text-white sm:text-5xl md:text-6xl"
             style={{ zIndex: 2 }}
           >
-            About Vishnu
+            About Us
           </h1>
           <div className="w-20 h-px my-6 bg-white" style={{ zIndex: 2 }}></div>
           <p
