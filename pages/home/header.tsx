@@ -136,7 +136,7 @@ const Header = () => {
                       height={24}
                       alt=""
                     />{" "}
-                    <span className="ml-2 text-sm font-normal tracking-wide text-green-700 sm:text-base">
+                    <span className="ml-2 text-xl font-normal tracking-wide text-green-700 sm:text-base">
                       Operation Medical Care
                     </span>
                   </span>
