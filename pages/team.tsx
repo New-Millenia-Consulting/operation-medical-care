@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { BookmarkAltIcon, MailIcon, PhoneIcon } from "@heroicons/react/outline";
 
 import Header from "./home/header";
 import Footer from "./home/footer";
@@ -11,9 +11,12 @@ import Picture46 from "../public/images/Picture46.png";
 
 import ImagePeter from "../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../public/images/home/team/john-johnson.jpg";
-import ImageStreeter from "../public/images/home/team/docs-streeter.jpg";
+import ImageIndu from "../public/images/Dr.Indu2.png";
 import ImageSharlene from "../public/images/home/team/sharlene-cox.jpg";
 import ImageBernadine from "../public/images/home/team/bernadine-peter.jpg";
+import ImageSogunro from"../public/images/sogunro-1-scaled.jpg";
+import ImageVikram from"../public/images/vikram-bcrop.png";
+import ImageNanda from "../public/images/nanda.png";
 
 const TeamPage = () => {
   return (
@@ -93,6 +96,36 @@ const TeamPage = () => {
                 </p>
               </div>
             </div>
+            <div className="flex flex-col items-center mt-0 md:flex-row md:items-start">
+              <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+                <Image
+                  src={ImageSogunro}
+                  width={176}
+                  height={256}
+                  objectFit="cover"
+                  placeholder="blur"
+                  alt="Headshot image of Olutayo Sogunro"
+                />
+              </div>
+              <div className="flex flex-col flex-1 py-1 md:ml-8">
+                <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
+                  Olutayo Sogunro
+                </h3>
+                <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
+                Gen. Surgery
+                </h4>
+                <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
+                Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
+                Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
+                State University in New Britain, CT with her B.S. in Biology and minor in 
+                Psychology. She graduated college a year early and earned her Master’s degree 
+                in Biology during her year off and enrolled in medical school at Edward Via
+                College of Osteopathic Medicine(VCOM-Virginia) in Blacksburg, VA. She completed
+                her general surgery training in Toledo, OH. She currently practices as an Acute
+                Care and Trauma Surgeon back in her home state of Connecticut.
+                </p>
+              </div>
+            </div>
             <div className="flex flex-col items-center md:flex-row md:items-start">
               <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
                 <Image
@@ -126,7 +159,7 @@ const TeamPage = () => {
             <div className="flex flex-col items-center md:flex-row md:items-start">
               <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
                 <Image
-                  src={ImageStreeter}
+                  src={ImageIndu}
                   width={176}
                   height={256}
                   objectFit="cover"
@@ -136,22 +169,22 @@ const TeamPage = () => {
               </div>
               <div className="flex flex-col flex-1 py-1 ml-8">
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
-                  Tom Streeter, O.D.
+                Indumathi Christopher
                 </h3>
                 <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
-                  Optometrist
+                Fundraiser, P.C.P.
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-                  Dr. Thomas Streeter first moved to the Emerald Coast in 1988.
-                  He graduated from Niceville High School in 1993. He obtained
-                  his Bachelors in Biology from the University of
-                  Alabama-Birmingham in 2000. From there, Dr. Tom pursued a
-                  Doctorate in Optometry, which he obtained in 2005 from the UAB
-                  School of Optometry.
+                  Dr. Christopher is a family practitioner and geriatrician who plays
+                 a pivotal role in OMC from seeing patients to fundraising. She works 
+                 very hard to gets businesses and families to support the wonderful
+                 medical work. She also finds dedicated nurses and volunteers to make
+                 the mission successful. She is instrumental in fundraising and 
+                 providing medical care, organization and leadership!
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-center md:flex-row md:items-start">
+            <div className="flex flex-col items-center md:flex-row md:items-start md:mt-[48px]">
               <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
                 <Image
                   src={ImageSharlene}
@@ -204,7 +237,7 @@ const TeamPage = () => {
                   Bernadine Peter
                 </h3>
                 <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
-                  Health Coordinator & Dietician
+                  Health Coordinator, Dietician
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
                   Peter is population health coordinator and registered
@@ -232,9 +265,49 @@ const TeamPage = () => {
           </h2>
           <div className="w-10 h-0.5 mx-auto mt-4 mb-10 bg-gray-500" />
           <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+          <li>
+              <div className="space-y-6">
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImageSogunro}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Nanda"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <div className="space-y-1 text-lg font-medium leading-6">
+                    <h3 className="text-center">Dr. Olutayo Sogunro</h3>
+                    <p className="text-center text-primary-600">
+                      Gen. Surgery - Del Rio, TX
+                    </p>
+                  </div>
+                  <ul className="flex justify-center space-x-5">
+                    <li>
+                      <Link href="mailto:Olutayosogunro@gmail.com">
+                        <a className="text-gray-400 hover:text-gray-500">
+                          <span className="sr-only">Email</span>
+                          <MailIcon className="w-5 h-5" aria-hidden="true" />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="tel:860-970-2870">
+                        <a className="text-gray-400 hover:text-gray-500">
+                          <span className="sr-only">Phone Number</span>
+                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
+                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Martin Okpalike</h3>
@@ -247,30 +320,20 @@ const TeamPage = () => {
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
+                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Dr. Indu Christopher</h3>
+                    <h3 className="text-center">Dr. Marsha Hardy</h3>
                     <p className="text-center text-primary-600">
-                      Geriatrician - Crestview, FL
+                      Dentist - Decatur, IL
                     </p>
                   </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:joshua93@cox.net">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
+                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Sam Potts</h3>
@@ -301,45 +364,14 @@ const TeamPage = () => {
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
+                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Dr. Marsha Hardy</h3>
+                    <h3 className="text-center">Dr. Alexander Phillip</h3>
                     <p className="text-center text-primary-600">
-                      Dentist - Decatur, IL
+                      Geriatrician - Crestview, FL
                     </p>
                   </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Dr. Olutayo Sogunro</h3>
-                    <p className="text-center text-primary-600">
-                      Gen. Surgery - Del Rio, TX
-                    </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Olutayosogunro@gmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:860-970-2870">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </li>
@@ -348,16 +380,32 @@ const TeamPage = () => {
         {/* Nurses/Volunteers */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-green-900"
             id="team"
           >
-            Meet Our Nurses & Volunteers
+            Meet Our Nurses and Volunteers
           </h2>
-          <div className="w-10 h-0.5 mx-auto mt-4 mb-10 bg-gray-500" />
+          <div className="w-20 h-0.5 mx-auto mt-3 mb-2 bg-green-500" />
+          <h3
+            className="text-center text-green-700"
+          >
+            These are the wonderful people who are always ready to help <br /> us tend to those in need by providing them that extra love and care
+          </h3>
+
+          <div className="w-20 h-0.5 mx-auto mt-4 mb-10 bg-green-500" />
           <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImageNanda}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Nanda"
+                  />
+                </div>
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Nanda Doody</h3>
@@ -365,228 +413,27 @@ const TeamPage = () => {
                       Nurse - Nanda Doody, FL
                     </p>
                   </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:nandadoody@yahoo.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:850-582-8004">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Nicole Doody</h3>
-                    <p className="text-center text-primary-600">
-                      Nurse - Huntsville, AL
-                    </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:doodynicole@yahoo.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:850-398-2753">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
+              <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImageVikram}
+                    width={256}
+                    height={300}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Nanda"
+                  />
                 </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Cassandra Morales</h3>
-                    <p className="text-center text-primary-600">
-                      Nurse - Camden, NJ
-                    </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Cas@morales-studio.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:862-221-0267">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Nikki Tara</h3>
-                    <p className="text-center text-primary-600">
-                      Student - UT Austin
-                    </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Nisha859@gmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:507-269-3668">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Meghan Kapur</h3>
-                    <p className="text-center text-primary-600">
-                      Student - Rice University
-                    </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Meghankapur@hotmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:850-490-9091">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Vikram Kumar</h3>
                     <p className="text-center text-primary-600">
                       Student - Alpharetta, GA
                     </p>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:20vikkumar@gmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:678-815-9712">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Marcia Hardy</h3>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:mahardydds@sbcglobal.net">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Martin</h3>
-                  </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:martinokp@hotmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-red-500 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Manda Dooley</h3>
                   </div>
                 </div>
               </div>

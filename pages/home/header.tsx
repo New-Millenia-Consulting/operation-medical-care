@@ -1,5 +1,4 @@
 import { useEffect, MouseEvent, useRef, Fragment } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -8,6 +7,9 @@ import smoothscroll from "smoothscroll-polyfill";
 
 import { PhoneIcon, MailIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Disclosure, Transition } from "@headlessui/react";
+
+import {secondGreen} from "./../../tailwind.config";
+import {thirdGreen} from "./../../tailwind.config";
 
 const navigation = [
   { name: "Home", href: "/", current: false },
@@ -18,25 +20,25 @@ const navigation = [
 
 const HeaderTopbar = () => {
   return (
-    <div className="hidden w-full border-b border-gray-200 md:block">
+    <div className="hidden w-full border-b border-mainGreen md:block">
       <div className="flex flex-row items-center justify-between max-w-6xl m-auto px-7">
         <ul className="flex flex-row h-full">
           <li className="flex flex-row items-center mr-3">
             {/* TODO Make this link a phone number */}
             <a
               href="tel:850-974-7400"
-              className="text-gray-500 transition-colors hover:text-blue-600"
+              className="text-gray-700 transition-colors hover:text-blue-600"
             >
               <PhoneIcon className="inline w-4 h-4" />
               <span>(850) 974-7400</span>
             </a>
           </li>
-          <span className="block w-[1px] bg-gray-200 h-auto"></span>
+          <span className="block w-[1px] bg-mainGreen h-auto"></span>
           <li className="flex flex-row items-center ml-3">
             {/* TODO Make this link an email */}
             <a
               href="mailto:operationmedicalcare@gmail.com"
-              className="text-gray-500 transition-colors hover:text-blue-600"
+              className="text-gray-700 transition-colors hover:text-blue-600"
             >
               <MailIcon className="inline w-4 h-4 mr-1" />
               <span>operationmedicalcare@gmail.com</span>
@@ -104,7 +106,7 @@ const Header = () => {
 
   return (
     <div
-      className="fixed top-0 z-50 flex flex-col items-center justify-center w-full bg-white md:relative"
+      className="fixed top-0 z-50 flex flex-col items-center justify-center w-full md:relative bg-secondGreen"
       style={{ boxShadow: "0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1)" }}
     >
       <HeaderTopbar />
@@ -125,32 +127,32 @@ const Header = () => {
                 )}
               </Disclosure.Button>
             </div>
-            <h1 className="text-2xl font-bold tracking-tighter ">
+            <h1 className="text-xl font-bold tracking-tighter ">
               <Link href="/">
                 <a>
-                  <span className="flex items-center justify-center">
+                  <span className="flex items-center justify-center -ml-20">
                     <Image
-                      className="scale-100 md:scale-100"
+                      className="scale-100 md:scale-100 -ml-20"
                       src="/images/home/plus.svg"
-                      width={24}
-                      height={24}
+                      width={50}
+                      height={50}
                       alt=""
                     />{" "}
-                    <span className="ml-2 text-xl font-normal tracking-wide text-green-700 sm:text-base">
+                    <span className="ml-5 text-2xl font-normal tracking-wide text-black sm:text-5xl">
                       Operation Medical Care
                     </span>
                   </span>
                 </a>
               </Link>
             </h1>
-            <ul className="flex-row hidden space-x-5 md:flex">
+            <ul className="flex-row hidden space-x-5 md:flex text-xl">
               {navigation.map((item) => (
                 <li
                   key={item.name}
                   className={` transition-colors ${
                     item.current
                       ? "text-primary-500 hover:text-primary-700"
-                      : "text-gray-600 hover:text-primary-500"
+                      : "text-gray-700 hover:text-primary-500"
                   }`}
                 >
                   <a href={item.href} onClick={anchorLinkClick}>
@@ -184,7 +186,7 @@ const Header = () => {
                     className={`
                     ${
                       item.current
-                        ? "bg-blue-300 bg-opacity-30 border-l-4 border-r-4 border-blue-500"
+                        ? "bg-blue-300 bg-opacity-30 border-l-4 border-r-4 border-mainGreen"
                         : ""
                     }
                     block px-3 py-2 text-base font-medium w-full text-center`}

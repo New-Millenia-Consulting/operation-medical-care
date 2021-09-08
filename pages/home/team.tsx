@@ -3,13 +3,14 @@ import Link from "next/link";
 
 import ImagePeter from "../../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../../public/images/home/team/john-johnson.jpg";
-import ImageStreeter from "../../public/images/home/team/docs-streeter.jpg";
+import ImageIndu from "../../public/images/Dr.Indu2.png";
 import ImageSharlene from "../../public/images/home/team/sharlene-cox.jpg";
 import ImageBernadine from "../../public/images/home/team/bernadine-peter.jpg";
+import ImageSogunro from"../../public/images/sogunro-1-scaled.jpg";
 
 const TeamSection = () => {
   return (
-    <div className="px-8 py-20 pb-16 m-auto max-w-7xl">
+    <div className="px-0 py-20 pb-16 m-auto max-w-7xl">
       <h2
         className="text-4xl font-bold text-center text-blue-gray-800 md:text-left"
         id="team"
@@ -32,7 +33,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
               Joesph Peter, M.D.
             </h3>
-            <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Founder - Pediatrician
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -41,6 +42,36 @@ const TeamSection = () => {
               their family’s ability to pay. He’s led nine medical mission trips
               to Belize, and worked with the Crestview Masonic Lodge to start
               the annual No Child Without Health Care fair.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col items-center md:flex-row md:items-start">
+          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+            <Image
+              src={ImageSogunro}
+              width={176}
+              height={256}
+              objectFit="cover"
+              placeholder="blur"
+              alt="Headshot image of Dr. Sogunro"
+            />
+          </div>
+          <div className="flex flex-col flex-1 py-1 md:ml-8">
+            <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
+              Olutayo Sogunro
+            </h3>
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
+              Gen. Surgery
+            </h4>
+            <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
+            Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
+            Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
+            State University in New Britain, CT with her B.S. in Biology and minor in 
+            Psychology. She graduated college a year early and earned her Master’s degree 
+            in Biology during her year off and enrolled in medical school at Edward Via
+            College of Osteopathic Medicine(VCOM-Virginia) in Blacksburg, VA. She completed
+            her general surgery training in Toledo, OH. She currently practices as an Acute
+            Care and Trauma Surgeon back in her home state of Connecticut.
             </p>
           </div>
         </div>
@@ -59,7 +90,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
               John Johnson, M.D.
             </h3>
-            <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Family Medicine
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -77,7 +108,7 @@ const TeamSection = () => {
         <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
-              src={ImageStreeter}
+              src={ImageIndu}
               width={176}
               height={256}
               objectFit="cover"
@@ -87,21 +118,22 @@ const TeamSection = () => {
           </div>
           <div className="flex flex-col flex-1 py-1 ml-8">
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
-              Tom Streeter, O.D.
+              Indumathi Christopher
             </h3>
-            <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
-              Optometrist
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
+              Fundraiser & P.C.P.
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-              Dr. Thomas Streeter first moved to the Emerald Coast in 1988. He
-              graduated from Niceville High School in 1993. He obtained his
-              Bachelors in Biology from the University of Alabama-Birmingham in
-              2000. From there, Dr. Tom pursued a Doctorate in Optometry, which
-              he obtained in 2005 from the UAB School of Optometry.
+            Dr. Christopher is a family practitioner and geriatrician who plays
+            a pivotal role in OMC from seeing patients to fundraising. She works 
+            very hard to gets businesses and families to support the wonderful
+            medical work. She also finds dedicated nurses and volunteers to make
+            the mission successful. She is instrumental in fundraising and 
+            providing medical care, organization and leadership!
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:items-start">
+        <div className="flex flex-col items-center md:flex-row md:items-start md:mt-[48px]">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageSharlene}
@@ -116,7 +148,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
               Sharlene Cox
             </h3>
-            <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Treasurer
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -152,7 +184,7 @@ const TeamSection = () => {
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
               Bernadine Peter
             </h3>
-            <h4 className="text-lg font-semibold text-center text-primary-700 md:text-left">
+            <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Health Coordinator & Dietician
             </h4>
             <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
@@ -170,7 +202,7 @@ const TeamSection = () => {
         </div>
         <div className="place-self-center">
           <Link href="/team">
-            <a className="text-lg font-medium transition-colors text-primary-400 hover:text-primary-700">
+            <a className="text-lg font-medium transition-colors text-green-500 hover:text-primary-700">
               See the rest of our team!{" "}
               <span aria-hidden="true" className="ml-1">
                 &rarr;
