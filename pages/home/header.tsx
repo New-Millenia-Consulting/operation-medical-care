@@ -130,7 +130,7 @@ const Header = () => {
                 <a>
                   <span className="flex items-center justify-center">
                     <Image
-                      className="scale-75 md:scale-100"
+                      className="scale-100 md:scale-100"
                       src="/images/home/plus.svg"
                       width={24}
                       height={24}
