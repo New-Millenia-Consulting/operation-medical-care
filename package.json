@@ -52,7 +52,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "engines": {
-    "node": ">=16.5.0",
+    "node": "14.x",
     "npm": ">=7.0.0"
   }
 }
