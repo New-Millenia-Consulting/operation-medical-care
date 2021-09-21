@@ -90,17 +90,17 @@ const Header = () => {
     }
   }, [router]);
 
-  // const anchorLinkClick = (event: MouseEvent<HTMLElement>) => {
-  //   if (!supportsSmoothScrollingRef.current) {
-  //     const href = (event.target as HTMLElement).getAttribute("href");
+  const anchorLinkClick = (event: MouseEvent<HTMLElement>) => {
+    if (!supportsSmoothScrollingRef.current) {
+      const href = (event.target as HTMLElement).getAttribute("href").toString;
 
-  //     if (href.length > 1) {
-  //       document
-  //         .querySelector((event.target as HTMLElement).getAttribute("href"))
-  //         ?.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   }
-  // };
+      if (href.length > 1) {
+        document
+          .querySelector((event.target as HTMLElement).getAttribute("href"))
+          ?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <div
@@ -153,8 +153,7 @@ const Header = () => {
                       : "text-gray-600 hover:text-primary-500"
                   }`}
                 >
-                  {/* <a href={item.href} onClick={anchorLinkClick}> */}
-                  <a href={item.href}>
+                  <a href={item.href} onClick={anchorLinkClick}>
                     {item.name}
                   </a>
                 </li>
