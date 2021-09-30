@@ -86,18 +86,18 @@ const Header = () => {
                 )}
               </Disclosure.Button>
             </div>
-            <h1 className="text-xl font-bold tracking-tighter ">
+            <h1 className="text-5xl md:text-3xl font-bold tracking-tighter ">
               <Link href="/">
                 <a>
                   <span className="flex items-center justify-center -ml-20">
                     <Image
-                      className="scale-100 md:scale-100 -ml-20"
+                      className="scale-100 md:scale-50 sm:scale-25 -ml-20"
                       src="/images/home/plus.svg"
                       width={50}
                       height={50}
                       alt=""
                     />{" "}
-                    <span className="ml-5 text-2xl font-normal tracking-wide text-black sm:text-5xl">
+                    <span className="ml-5 font-normal tracking-wide text-black">
                       Operation Medical Care
                     </span>
                   </span>

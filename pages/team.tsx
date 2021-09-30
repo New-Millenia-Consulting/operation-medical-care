@@ -282,24 +282,6 @@ const TeamPage = () => {
                       Gen. Surgery - Del Rio, TX
                     </p>
                   </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Olutayosogunro@gmail.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:860-970-2870">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </li>
@@ -339,24 +321,6 @@ const TeamPage = () => {
                       Podiatrist - Decatur, IL
                     </p>
                   </div>
-                  <ul className="flex justify-center space-x-5">
-                    <li>
-                      <Link href="mailto:Psampotts@aol.com">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Email</span>
-                          <MailIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="tel:217-620-7721">
-                        <a className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Phone Number</span>
-                          <PhoneIcon className="w-5 h-5" aria-hidden="true" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </li>
@@ -378,7 +342,7 @@ const TeamPage = () => {
         {/* Nurses/Volunteers */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center md:text-4xl text-green-900"
+            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-green-900"
             id="team"
           >
             Meet Our Nurses and Volunteers
