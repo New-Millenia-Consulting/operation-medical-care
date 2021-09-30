@@ -39,3 +39,8 @@ h5 {
 .swiper-button-prev {
   --swiper-navigation-color: theme("colors.blue.400");
 }
+
+.ahmeds_class {
+  position: relative; 
+  bottom: 48px;
+}

@@ -61,7 +61,7 @@ const TeamPage = () => {
         {/* Leadership */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
+            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Leadership
@@ -115,14 +115,12 @@ const TeamPage = () => {
                 Gen. Surgery
                 </h4>
                 <p className="flex-1 mt-3 text-center text-gray-600 md:text-left">
-                Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
-                Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
-                State University in New Britain, CT with her B.S. in Biology and minor in 
-                Psychology. She graduated college a year early and earned her Master’s degree 
-                in Biology during her year off and enrolled in medical school at Edward Via
-                College of Osteopathic Medicine(VCOM-Virginia) in Blacksburg, VA. She completed
-                her general surgery training in Toledo, OH. She currently practices as an Acute
-                Care and Trauma Surgeon back in her home state of Connecticut.
+                  Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
+                  Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
+                  State University in New Britain, CT with her B.S. in Biology and minor in 
+                  Psychology. She completed her general surgery training in Toledo, OH. She 
+                  currently practices as an Acute Care and Trauma Surgeon back in her home 
+                  state of Connecticut.
                 </p>
               </div>
             </div>
@@ -258,7 +256,7 @@ const TeamPage = () => {
         {/* Doctors */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
+            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Doctors
@@ -369,7 +367,7 @@ const TeamPage = () => {
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Alexander Phillip</h3>
                     <p className="text-center text-primary-600">
-                      Geriatrician - Crestview, FL
+                      Er. Surgery - Fort Myers, FL
                     </p>
                   </div>
                 </div>
@@ -393,7 +391,7 @@ const TeamPage = () => {
           </h3>
 
           <div className="w-20 h-0.5 mx-auto mt-4 mb-10 bg-green-500" />
-          <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+          <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-2 lg:max-w-5xl">
             <li>
               <div className="space-y-6">
                 <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">

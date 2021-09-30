@@ -12,11 +12,12 @@ const TeamSection = () => {
   return (
     <div className="px-0 py-20 pb-16 m-auto max-w-7xl">
       <h2
-        className="text-4xl font-bold text-center text-blue-gray-800 md:text-left"
+        className="text-4xl font-bold text-center hover:text-primary-700 text-blue-gray-800 lg:text-center md:text-left"
         id="team"
       >
         Meet Our Leadership
       </h2>
+      <div className="w-10 h-0.5 mx-auto mt-4 mb-10 bg-gray-500" />
       <div className="grid grid-cols-1 gap-16 mt-10 lg:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
           <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
@@ -67,11 +68,9 @@ const TeamSection = () => {
             Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
             Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
             State University in New Britain, CT with her B.S. in Biology and minor in 
-            Psychology. She graduated college a year early and earned her Master’s degree 
-            in Biology during her year off and enrolled in medical school at Edward Via
-            College of Osteopathic Medicine(VCOM-Virginia) in Blacksburg, VA. She completed
-            her general surgery training in Toledo, OH. She currently practices as an Acute
-            Care and Trauma Surgeon back in her home state of Connecticut.
+            Psychology. She completed her general surgery training in Toledo, OH. She 
+            currently practices as an Acute Care and Trauma Surgeon back in her home 
+            state of Connecticut.
             </p>
           </div>
         </div>

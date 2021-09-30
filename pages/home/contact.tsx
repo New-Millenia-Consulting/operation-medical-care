@@ -65,7 +65,7 @@ const Contact = () => {
           <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="flex flex-col items-center max-w-lg mx-auto md:items-start">
               <h2
-                className="text-2xl font-extrabold tracking-tight text-center text-green-900 sm:text-3xl md:text-left"
+                className="text-2xl font-extrabold tracking-tight text-center text-green-900 hover:text-primary-700 sm:text-3xl md:text-left"
                 id="contact"
               >
                 Get in touch
@@ -76,20 +76,6 @@ const Contact = () => {
                 nonprofit.
               </p>
               <dl className="mt-4 text-base text-green-700">
-                <div className="group">
-                  <dt className="sr-only">Phone number</dt>
-                  <dd className="flex">
-                    <PhoneIcon
-                      className="flex-shrink-0 w-6 h-6 text-green-700 transition group-hover:text-primary-500"
-                      aria-hidden="true"
-                    />
-                    <Link href="tel:850-974-7400">
-                      <a className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
-                        +1 (850) 974-7400
-                      </a>
-                    </Link>
-                  </dd>
-                </div>
                 <div className="mt-3 group">
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">

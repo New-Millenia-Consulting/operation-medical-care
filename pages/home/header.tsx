@@ -8,52 +8,12 @@ import smoothscroll from "smoothscroll-polyfill";
 import { PhoneIcon, MailIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Disclosure, Transition } from "@headlessui/react";
 
-import {secondGreen} from "./../../tailwind.config";
-import {thirdGreen} from "./../../tailwind.config";
-
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
   { name: "Team", href: "/team", current: false },
   { name: "Contact", href: "/#contact", current: false },
 ];
-
-const HeaderTopbar = () => {
-  return (
-    <div className="hidden w-full border-b border-mainGreen md:block">
-      <div className="flex flex-row items-center justify-between max-w-6xl m-auto px-7">
-        <ul className="flex flex-row h-full">
-          <li className="flex flex-row items-center mr-3">
-            {/* TODO Make this link a phone number */}
-            <a
-              href="tel:850-974-7400"
-              className="text-gray-700 transition-colors hover:text-blue-600"
-            >
-              <PhoneIcon className="inline w-4 h-4" />
-              <span>(850) 974-7400</span>
-            </a>
-          </li>
-          <span className="block w-[1px] bg-mainGreen h-auto"></span>
-          <li className="flex flex-row items-center ml-3">
-            {/* TODO Make this link an email */}
-            <a
-              href="mailto:operationmedicalcare@gmail.com"
-              className="text-gray-700 transition-colors hover:text-blue-600"
-            >
-              <MailIcon className="inline w-4 h-4 mr-1" />
-              <span>operationmedicalcare@gmail.com</span>
-            </a>
-          </li>
-        </ul>
-        <div className="px-3 py-2 pr-0">
-          <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-            <a className="btn-main">Donate!</a>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Header = () => {
   const router = useRouter();
@@ -94,7 +54,7 @@ const Header = () => {
 
   const anchorLinkClick = (event: MouseEvent<HTMLElement>) => {
     if (!supportsSmoothScrollingRef.current) {
-      const href = (event.target as HTMLElement).getAttribute("href");
+      const href = (event.target as HTMLElement).getAttribute("href").toString;
 
       if (href.length > 1) {
         document
@@ -109,7 +69,6 @@ const Header = () => {
       className="fixed top-0 z-50 flex flex-col items-center justify-center w-full md:relative bg-secondGreen"
       style={{ boxShadow: "0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1)" }}
     >
-      <HeaderTopbar />
       <Disclosure
         as="nav"
         className="relative flex flex-row items-center justify-center w-full max-w-6xl py-4 md:py-5 md:justify-between px-7"

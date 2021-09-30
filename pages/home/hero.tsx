@@ -2,12 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Picture32 from "../../public/images/picture32.png";
-import colors from "/Users/legendlinked/Documents/GitHub/operation-medical-care/tailwind.config.js"
+
+
 export default function Hero() {
   return (
     <main className="bg-grey-100 relative grid w-full grid-cols-1 pt-12 pb-20 mx-auto text-center lg:grid-cols-2 max-w-7xl lg:py-16 lg:text-left isolate mt-14 md:mt-0">
       <div className="z-10 px-2 lg:px-16 sm:px-8">
-        <h1 className="mt-8 text-3xl font-medium tracking-tight text-white lg:mb-6 lg:mt-0 lg:font-normal lg:text-green-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl">
+        <h1 className="mt-8 text-3xl font-medium tracking-tight text-white lg:mb-6 lg:mt-0 lg:font-normal hover:text-primary-700 lg:text-green-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-5xl">
           Providing Care <br />
           Changing Lives
         </h1>
@@ -16,11 +17,11 @@ export default function Hero() {
         dietitians, business owners, software engineers, and everyday people all
         committed to bringing healthcare to the remote villages and towns of Belize.
         </p>
-        <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-          <a className="inline-block px-10 py-4 font-medium transition-all bg-white rounded shadow lg:mt-8 text-primary-600 hover:text-white hover:bg-primary-500 hover:shadow-lg hover:cursor-pointer">
-            Donate!
-          </a>
-        </Link>
+        <div className="px-0 py-2 pr-0">
+          <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
+            <a className="btn-main">Donate!</a>
+          </Link>
+        </div>
       </div>
       <div className="absolute inset-0 z-0 grid w-full h-full lg:relative place-self-center lg:w-4/5 lg:min-h-[23rem]">
         <Image
