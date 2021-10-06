@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import smoothscroll from "smoothscroll-polyfill";
 
-import { PhoneIcon, MailIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import {MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Disclosure, Transition } from "@headlessui/react";
 
 const navigation = [
@@ -86,18 +86,18 @@ const Header = () => {
                 )}
               </Disclosure.Button>
             </div>
-            <h1 className="text-5xl md:text-3xl font-bold tracking-tighter ">
+            <h1 className="font-bold tracking-tighter ">
               <Link href="/">
                 <a>
-                  <span className="flex items-center justify-center -ml-20">
+                  <span className="flex items-center justify-center -ml-20 xl:-ml-20 lg:-ml-0 md:-ml-0 sm:-ml-20  ">
                     <Image
-                      className="scale-100 md:scale-50 sm:scale-25 -ml-20"
+                      className="lg:scale-100 sm:scale-25"
                       src="/images/home/plus.svg"
                       width={50}
                       height={50}
                       alt=""
                     />{" "}
-                    <span className="ml-5 font-normal tracking-wide text-black">
+                    <span className="ml-5 font-normal tracking-wide text-black text-2xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-xl">
                       Operation Medical Care
                     </span>
                   </span>

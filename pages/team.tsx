@@ -17,6 +17,9 @@ import ImageBernadine from "../public/images/home/team/bernadine-peter.jpg";
 import ImageSogunro from"../public/images/sogunro-1-scaled.jpg";
 import ImageVikram from"../public/images/vikram-bcrop.png";
 import ImageNanda from "../public/images/nanda.png";
+import ImageOkpalike from"../public/images/Okpalike.png";
+import ImagePotts from"../public/images/Potts.png";
+import ImageHardy from"../public/images/Hardy.png";
 
 const TeamPage = () => {
   return (
@@ -272,7 +275,7 @@ const TeamPage = () => {
                     height={256}
                     objectFit="cover"
                     placeholder="blur"
-                    alt="Headshot image of Nanda"
+                    alt="Headshot image of Dr. Sogunro"
                   />
                 </div>
                 <div className="space-y-2">
@@ -287,20 +290,38 @@ const TeamPage = () => {
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
-                <div className="space-y-2">
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-center">Dr. Martin Okpalike</h3>
-                    <p className="text-center text-primary-600">
-                      Pediatrician - Decatur, IL
-                    </p>
-                  </div>
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImageOkpalike}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Dr. Okpalike"
+                  />
                 </div>
+                  <div className="space-y-2">
+                    <div className="space-y-1 text-lg font-medium leading-6">
+                      <h3 className="text-center">Dr. Martin Okpalike</h3>
+                      <p className="text-center text-primary-600">
+                        Pediatrician - Decatur, IL
+                      </p>
+                    </div>
+                  </div>
               </div>
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImageHardy}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Dr. Hardy"
+                  />
+                </div>
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Marsha Hardy</h3>
@@ -313,7 +334,16 @@ const TeamPage = () => {
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImagePotts}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Dr. Potts"
+                  />
+                </div>
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Sam Potts</h3>
@@ -351,7 +381,7 @@ const TeamPage = () => {
           <h3
             className="text-center text-green-700"
           >
-            These are the wonderful people who are always ready to help <br /> us tend to those in need by providing them that extra love and care
+            These are the wonderful people who are always ready to help <br /> us tend to those in need by providing them with that extra care and love
           </h3>
 
           <div className="w-20 h-0.5 mx-auto mt-4 mb-10 bg-green-500" />

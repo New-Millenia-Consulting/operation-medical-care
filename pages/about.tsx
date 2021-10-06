@@ -152,6 +152,14 @@ const Captions=[
   "Dr. Christopher and Dr. Hardy enjoying a boat ride!",
 ];
 
+const options = {
+  caption: {
+    captionFontFamily: "Ubuntu, sans-serif",
+    captionFontWeight: "300",
+    captionContainerPadding: "0px 0px"
+  }
+}
+
 const AboutPage = () => {
   return (
     <>
@@ -197,7 +205,7 @@ const AboutPage = () => {
         </div>
 
         <main className="p-4 pb-24 m-auto max-w-7xl">
-          <SRLWrapper>
+          <SRLWrapper options={options}>
             <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {Images.map((e, i) => (
                 <div
