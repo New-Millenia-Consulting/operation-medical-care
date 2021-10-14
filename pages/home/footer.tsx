@@ -1,5 +1,3 @@
-import {secondGreen} from "./../../tailwind.config";
-
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center bg-secondGreen">

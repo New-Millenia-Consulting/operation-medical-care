@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
-import { DownloadIcon } from "@heroicons/react/outline";
-
 import Header from "./home/header";
 import Footer from "./home/footer";
 
@@ -53,7 +51,6 @@ import Picture44 from "../public/images/Picture44.png";
 import Picture45 from "../public/images/Picture45.png";
 import Picture46 from "../public/images/Picture46.png";
 import Picture47 from "../public/images/Picture47.png";
-import { captureRejectionSymbol } from "events";
 
 // import Picture7Upscale from "../public/images/Picture7-2.png";
 

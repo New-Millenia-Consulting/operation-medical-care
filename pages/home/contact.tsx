@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
-import { MailIcon, PhoneIcon, MapIcon } from "@heroicons/react/outline";
+import { MailIcon} from "@heroicons/react/outline";
 
 import { useForm } from "react-hook-form";
 

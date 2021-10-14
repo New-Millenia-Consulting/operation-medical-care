@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-
-import { BookmarkAltIcon, MailIcon, PhoneIcon } from "@heroicons/react/outline";
 
 import Header from "./home/header";
 import Footer from "./home/footer";
