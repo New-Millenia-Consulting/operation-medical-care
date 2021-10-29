@@ -89,15 +89,15 @@ const Header = () => {
             <h1 className="font-bold tracking-tighter ">
               <Link href="/">
                 <a>
-                  <span className="flex items-center justify-center -ml-20 xl:-ml-20 lg:-ml-0 md:-ml-0 sm:-ml-20  ">
+                  <span className="flex items-center justify-center xl:-ml-20 lg:-ml-0 md:-ml-0 sm:ml-3 ">
                     <Image
-                      className="lg:scale-100 sm:scale-25"
+                      className="scale-0 xl:scale-100 lg:scale-100 md:scale-50"
                       src="/images/home/plus.svg"
                       width={50}
                       height={50}
                       alt=""
                     />{" "}
-                    <span className="ml-5 font-normal tracking-wide text-black text-2xl lg:text-5xl md:text-3xl sm:text-2xl xs:text-xl">
+                    <span className="-ml-10 lg:ml-5 md:ml-3 font-normal tracking-wide text-black text-lg lg:text-5xl md:text-2xl sm:text-xl xs:text-xs">
                       Operation Medical Care
                     </span>
                   </span>
@@ -131,7 +131,7 @@ const Header = () => {
               leaveTo="opacity-0"
             >
               <div
-                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-4 bg-white md:hidden top-14 ${
+                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-1 bg-white md:hidden top-20 ${
                   open
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 pointer-events-none -translate-y-3"

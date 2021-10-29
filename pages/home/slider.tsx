@@ -52,7 +52,7 @@ const Slider = () => {
         <div className="grid px-2 md:px-6 place-items-center justified-center">
         <div className="ahmeds_class">
           <Link href="/about">
-            <a className="xs:'text-center' text-4xl md:text-5xl font-medium transition-colors text-green-600 hover:text-primary-700">
+            <a className="xs:'text-center' text-2xl md:text-5xl sm:text-3xl font-medium transition-colors text-green-600 hover:text-primary-700">
               See more of our adventures!
             </a>
           </Link>
