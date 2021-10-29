@@ -165,7 +165,7 @@ const TeamPage = () => {
                   alt="Headshot image of Tom Streeter, O.D."
                 />
               </div>
-              <div className="flex flex-col flex-1 py-1 ml-8">
+              <div className="flex flex-col flex-1 py-1 md:ml-8">
                 <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
                 Indumathi Christopher
                 </h3>
