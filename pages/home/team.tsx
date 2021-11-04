@@ -5,22 +5,22 @@ import ImagePeter from "../../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../../public/images/home/team/john-johnson.jpg";
 import ImageIndu from "../../public/images/Dr.Indu2.png";
 import ImageSharlene from "../../public/images/home/team/sharlene-cox.jpg";
-import ImageBernadine from "../../public/images/home/team/bernadine-peter.jpg";
+import ImageBernadine from "../../public/images/Peter.png";
 import ImageSogunro from"../../public/images/sogunro-1-scaled.jpg";
 
 const TeamSection = () => {
   return (
     <div className="px-0 py-20 pb-16 m-auto max-w-7xl">
       <h2
-        className="text-4xl font-bold text-center text-blue-gray-800 lg:text-center md:text-left"
+        className="text-4xl font-bold text-center text-blue-gray-800 lg:text-center xs:text-left"
         id="team"
       >
         Meet Our Leadership
       </h2>
       <div className="w-10 h-0.5 mx-auto mt-4 mb-10 bg-gray-500" />
-      <div className="grid grid-cols-1 gap-16 mt-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-16 mt-10 lg:ml-5 lg:grid-cols-2">
         <div className="flex flex-col items-center md:flex-row md:items-start">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImagePeter}
               width={176}
@@ -37,7 +37,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Founder - Pediatrician
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
               During his 18 years as a pediatrician in Crestview, Dr. Joseph
               Peter has provided care to more than 7,000 children, regardless of
               their family’s ability to pay. He’s led nine medical mission trips
@@ -47,7 +47,7 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row md:items-start">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageSogunro}
               width={176}
@@ -64,7 +64,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Gen. Surgery
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
             Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
             Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
             State University in New Britain, CT with her B.S. in Biology and minor in 
@@ -75,7 +75,7 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row md:items-start">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageJohnson}
               width={176}
@@ -92,7 +92,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Family Medicine
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
               Born in Crestview, Dr. John Johnson has always had a passion for
               medicine and health care. He graduated from Louisiana State
               University School of Medicine at Shreveport with a doctor of
@@ -105,7 +105,7 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row md:items-start">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageIndu}
               width={176}
@@ -122,7 +122,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Fundraiser & P.C.P.
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
             Dr. Christopher is a family practitioner and geriatrician who plays
             a pivotal role in OMC from seeing patients to fundraising. She works 
             very hard to gets businesses and families to support the wonderful
@@ -132,8 +132,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center md:flex-row md:items-start md:mt-[48px]">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+        <div className="flex flex-col items-center md:flex-row md:items-start ">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageSharlene}
               width={176}
@@ -150,7 +150,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Treasurer
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
               Sharlene Cox has served as the Treasurer of Oepration Medical Care
               for 13 years with much success. She helps to raise the necessary
               funds for the Operation Medical Care Team to travel to Belive for
@@ -168,8 +168,8 @@ const TeamSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center mt-0 md:flex-row md:items-start md:mt-[48px]">
-          <div className="overflow-hidden rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
+        <div className="flex flex-col items-center mt-0 md:flex-row md:items-start">
+          <div className="overflow-hidden md:ml-5 lg:ml-0 rounded-md shadow-md w-36 h-52 lg:w-44 lg:h-64">
             <Image
               src={ImageBernadine}
               width={176}
@@ -186,7 +186,7 @@ const TeamSection = () => {
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Health Coordinator & Dietician
             </h4>
-            <p className="flex-1 mt-3 ml-5 mr-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
+            <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
               Peter is population health coordinator and registered dietitian at
               Val Verde Regional Medical Center in Del Rio, Texas. She
               previously served at Franklin Primary Health Center Inc. in
