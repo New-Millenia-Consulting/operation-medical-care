@@ -62,7 +62,7 @@ const HomePage = () => {
         <CounterSection />
         <TeamSection />
         <div className="w-full px-8 py-5 bg-thirdGreen">
-          <p className="max-w-2xl m-auto text-center text-green-500">
+          <p className="max-w-2xl m-auto text-center text-green-500" id="contact">
             Due to circumstances surrounding COVID-19 pandemic and the safety of
             our patients, Operation Medical Care will resume in September of
             2022

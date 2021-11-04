@@ -12,7 +12,7 @@ const TeamSection = () => {
   return (
     <div className="px-0 py-20 pb-16 m-auto max-w-7xl">
       <h2
-        className="text-4xl font-bold text-center hover:text-primary-700 text-blue-gray-800 lg:text-center md:text-left"
+        className="text-4xl font-bold text-center text-blue-gray-800 lg:text-center md:text-left"
         id="team"
       >
         Meet Our Leadership

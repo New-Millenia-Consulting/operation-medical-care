@@ -10,13 +10,14 @@ import ImagePeter from "../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../public/images/home/team/john-johnson.jpg";
 import ImageIndu from "../public/images/Dr.Indu2.png";
 import ImageSharlene from "../public/images/home/team/sharlene-cox.jpg";
-import ImageBernadine from "../public/images/home/team/bernadine-peter.jpg";
+import ImageBernadine from "../public/images/Peter.png";
 import ImageSogunro from"../public/images/sogunro-1-scaled.jpg";
 import ImageVikram from"../public/images/vikram-bcrop.png";
 import ImageNanda from "../public/images/nanda.png";
 import ImageOkpalike from"../public/images/Okpalike.png";
 import ImagePotts from"../public/images/Potts.png";
 import ImageHardy from"../public/images/Hardy.png";
+import ImagePhillip from"../public/images/Phillip.png";
 
 const TeamPage = () => {
   return (
@@ -61,7 +62,7 @@ const TeamPage = () => {
         {/* Leadership */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Leadership
@@ -256,7 +257,7 @@ const TeamPage = () => {
         {/* Doctors */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-blue-gray-800"
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
             id="team"
           >
             Meet Our Doctors
@@ -353,7 +354,16 @@ const TeamPage = () => {
             </li>
             <li>
               <div className="space-y-6">
-                <div className="w-40 h-40 mx-auto bg-primary-700 rounded-full xl:w-56 xl:h-56" />
+                <div className="overflow-hidden rounded-full mx-auto shadow-md w-36 h-36 lg:w-56 lg:h-56">
+                  <Image
+                    src={ImagePhillip}
+                    width={256}
+                    height={256}
+                    objectFit="cover"
+                    placeholder="blur"
+                    alt="Headshot image of Dr. Okpalike"
+                  />
+                </div>
                 <div className="space-y-2">
                   <div className="space-y-1 text-lg font-medium leading-6">
                     <h3 className="text-center">Dr. Alexander Phillip</h3>
@@ -369,7 +379,7 @@ const TeamPage = () => {
         {/* Nurses/Volunteers */}
         <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
           <h2
-            className="text-3xl font-bold text-center hover:text-primary-700 md:text-4xl text-green-900"
+            className="text-3xl font-bold text-center md:text-4xl text-green-900"
             id="team"
           >
             Meet Our Nurses and Volunteers

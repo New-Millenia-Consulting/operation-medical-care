@@ -72,7 +72,7 @@ export default function Mission() {
 
         <div className="relative max-w-md px-4 mx-auto border-0 sm:max-w-3xl sm:px-6 lg:px-0">
           <div className="lg:pt-20">
-            <h2 className="text-3xl font-medium tracking-tight hover:text-primary-700 text-center text-green-800 sm:text-5xl lg:text-left">
+            <h2 className="text-3xl font-medium tracking-tight text-center text-green-800 sm:text-5xl lg:text-left">
               On a Mission to
               <br />
               Help Those In Need

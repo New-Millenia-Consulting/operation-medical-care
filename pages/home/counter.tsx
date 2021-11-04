@@ -46,7 +46,7 @@ const CounterSection = () => {
       <div className="m-auto max-w-screen-2xl">
         <div className="relative grid w-full grid-cols-2 gap-10 lg:divide-x lg:grid-cols-4 lg:divide-mainGreen lg:divide-opacity-90 lg:gap-0">
           <div className="flex flex-col items-center justify-center lg:px-8">
-            <span className="text-5xl font-bold md:text-6xl text-green-500">
+            <span className="ml-5 text-5xl font-bold md:ml-0 md:text-6xl text-green-500">
               ${countUpDonations}k+
             </span>
             <span className="text-green-900">In Donations</span>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
-import { MailIcon} from "@heroicons/react/outline";
+import { MailIcon, PhoneIcon, MapIcon } from "@heroicons/react/outline";
 
 import { useForm } from "react-hook-form";
 
@@ -65,8 +65,7 @@ const Contact = () => {
           <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="flex flex-col items-center max-w-lg mx-auto md:items-start">
               <h2
-                className="text-2xl font-extrabold tracking-tight text-center text-green-900 hover:text-primary-700 sm:text-3xl md:text-left"
-                id="contact"
+                className="text-2xl font-extrabold tracking-tight text-center text-green-900 sm:text-3xl md:text-left"
               >
                 Get in touch
               </h2>
