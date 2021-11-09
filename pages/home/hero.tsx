@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Picture32 from "../../public/images/picture32.png";
+import Picture32 from "../../public/images/Picture32.png";
 
 
 export default function Hero() {
