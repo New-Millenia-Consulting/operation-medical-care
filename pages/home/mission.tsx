@@ -5,6 +5,8 @@ import { Parallax } from "react-scroll-parallax";
 
 import ImageMap from "../../public/images/home/mission/dreamstime_xxl_114898439.jpg";
 
+//RePR
+
 export default function Mission() {
   return (
     <div className="relative py-16 bg-secondGreen sm:py-24">
