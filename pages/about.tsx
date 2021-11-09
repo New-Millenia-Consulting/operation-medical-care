@@ -3,8 +3,6 @@ import Image from "next/image";
 
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
-import { DownloadIcon } from "@heroicons/react/outline";
-
 import Header from "./home/header";
 import Footer from "./home/footer";
 
@@ -31,14 +29,12 @@ import Picture20 from "../public/images/Picture20.png";
 import Picture21 from "../public/images/Picture21.png";
 import Picture22 from "../public/images/Picture22.png";
 import Picture23 from "../public/images/Picture23.png";
-import Picture24 from "../public/images/Picture24.png";
 import Picture25 from "../public/images/Picture25.png";
 import Picture26 from "../public/images/Picture26.png";
 import Picture27 from "../public/images/Picture27.png";
 import Picture28 from "../public/images/Picture28.png";
 import Picture29 from "../public/images/Picture29.png";
 import Picture30 from "../public/images/Picture30.png";
-import Picture31 from "../public/images/Picture31.png";
 import Picture32 from "../public/images/Picture32.png";
 import Picture33 from "../public/images/Picture33.png";
 import Picture34 from "../public/images/Picture34.png";
@@ -82,14 +78,12 @@ const Images = [
   Picture21,
   Picture22,
   Picture23,
-  Picture24,
   Picture25,
   Picture26,
   Picture27,
   Picture28,
   Picture29,
   Picture30,
-  Picture31,
   Picture32,
   Picture33,
   Picture34,
@@ -107,6 +101,61 @@ const Images = [
   Picture46,
   Picture47,
 ];
+const Captions=[
+  "Nikki is a pre-med volunteer with a pediatric client",
+  "Megan is pre-med volunteer with a family from Orange Walk town in Belize",
+  "The core medical team",
+  "Dr. Hardy teaching dental health",
+  "",
+  "",
+  "",
+  "Vikram administering parasitic infection medication for a young child",
+  "",
+  "",
+  "",
+  "Student volunteers with patients",
+  "Operation Medical Care team",
+  "Ms. Belize visiting the clinic",
+  "Ms. Belize visiting the clinic",
+  "",
+  "Ms. Peter, Dietitan",
+  "",
+  "Dr. Johnson",
+  "Dr. Sogunro",
+  "Dr. Peter",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "Doctors enjoying the fresh coconut water, a local delicacy",
+  "A school clinic",
+  "Dr. Hardy teaching dental health to school students",
+  "",
+  "Dr. Sogunro and patient in Orange Walk town",
+  "Dr. Christopher",
+  "Nurse Nanda",
+  "",
+  "",
+  "Dr. Peter",
+  "Nurse Nicole",
+  "",
+  "",
+  "Doctors winding down",
+  "Ball is life",
+  "Nurse Nicole",
+  "",
+  "",
+  "Dr. Christopher and Dr. Hardy enjoying a boat ride!",
+];
+
+const options = {
+  caption: {
+    captionFontFamily: "Ubuntu, sans-serif",
+    captionFontWeight: "300",
+    captionContainerPadding: "0px 0px"
+  }
+}
 
 const AboutPage = () => {
   return (
@@ -150,20 +199,10 @@ const AboutPage = () => {
             necessities, but hats—to prevent glaucoma, toys, school supplies,
             and everyday items that would otherwise be unaffordable.
           </p>
-          <a
-            href="https://www.dropbox.com/scl/fi/852dybe6tsapdcf56nomi/Belize-Trip-2018-Final.pptx?dl=1&rlkey=cvwiosihr69n16doxr54ci7gq"
-            download
-            className="mt-10 text-base font-medium tracking-wide text-center text-blue-300 md:text-lg"
-            style={{ zIndex: 2 }}
-          >
-            See our 2018 Mission
-            <br className="md:hidden" /> Trip Powerpoint!{" "}
-            <DownloadIcon className="inline-block w-5 h-5 ml-1 -translate-y-px" />
-          </a>
         </div>
 
         <main className="p-4 pb-24 m-auto max-w-7xl">
-          <SRLWrapper>
+          <SRLWrapper options={options}>
             <div className="grid w-full grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {Images.map((e, i) => (
                 <div
@@ -175,7 +214,7 @@ const AboutPage = () => {
                     placeholder="blur"
                     objectFit="cover"
                     layout="fill"
-                    alt=""
+                    alt={Captions[i]}
                   />
                 </div>
               ))}

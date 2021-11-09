@@ -13,7 +13,7 @@ SwiperCore.use([Pagination, Navigation]);
 import Image1 from "../../public/images/home/about/photo-1.jpg";
 import Image2 from "../../public/images/home/about/photo-2.jpg";
 
-import Image3 from "../../public/images/Picture1-crop.png";
+import Image3 from "../../public/images/Picture39.png";
 import Image4 from "../../public/images/Picture4.png";
 import Image5 from "../../public/images/Picture8.png";
 
@@ -24,7 +24,7 @@ type SliderImage = {
 
 const SliderImages: SliderImage[] = [
   {
-    src: Image3,
+    src: Image5,
     desc: "",
   },
   {
@@ -40,16 +40,23 @@ const SliderImages: SliderImage[] = [
     desc: "",
   },
   {
-    src: Image5,
+    src: Image3,
     desc: "",
   },
 ];
 
 const Slider = () => {
   return (
-    <div className="grid py-24 md:px-10 bg-blue-gray-50 place-items-center">
-      <div className="flex flex-col items-center w-full md:max-w-3xl">
-        <div className="grid px-2 md:px-6 md:pr-0 place-items-center">
+    <div className="grid py-24 md:px-10 bg-mainGreen place-items-center">
+      <div className="flex flex-col items-center w-full md:max-w-2xl">
+        <div className="grid px-2 md:px-6 place-items-center justified-center">
+        <div className="ahmeds_class">
+          <Link href="/about">
+            <a className="xs:'text-center' text-2xl md:text-5xl sm:text-3xl font-medium transition-colors text-green-600 hover:text-primary-700">
+              See more of our adventures!
+            </a>
+          </Link>
+        </div>
           <Swiper
             navigation={true}
             pagination={{
@@ -88,16 +95,6 @@ const Slider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="mt-10">
-          <Link href="/about">
-            <a className="text-base font-medium transition-colors text-primary-600 hover:text-primary-700">
-              See more of our adventures!{" "}
-              <span aria-hidden="true" className="ml-1">
-                &rarr;
-              </span>{" "}
-            </a>
-          </Link>
         </div>
       </div>
     </div>

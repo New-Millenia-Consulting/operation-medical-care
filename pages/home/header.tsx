@@ -1,12 +1,11 @@
 import { useEffect, MouseEvent, useRef, Fragment } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 import smoothscroll from "smoothscroll-polyfill";
 
-import { PhoneIcon, MailIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import {MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Disclosure, Transition } from "@headlessui/react";
 
 const navigation = [
@@ -15,43 +14,6 @@ const navigation = [
   { name: "Team", href: "/team", current: false },
   { name: "Contact", href: "/#contact", current: false },
 ];
-
-const HeaderTopbar = () => {
-  return (
-    <div className="hidden w-full border-b border-gray-200 md:block">
-      <div className="flex flex-row items-center justify-between max-w-6xl m-auto px-7">
-        <ul className="flex flex-row h-full">
-          <li className="flex flex-row items-center mr-3">
-            {/* TODO Make this link a phone number */}
-            <a
-              href="tel:850-974-7400"
-              className="text-gray-500 transition-colors hover:text-blue-600"
-            >
-              <PhoneIcon className="inline w-4 h-4" />
-              <span>(850) 974-7400</span>
-            </a>
-          </li>
-          <span className="block w-[1px] bg-gray-200 h-auto"></span>
-          <li className="flex flex-row items-center ml-3">
-            {/* TODO Make this link an email */}
-            <a
-              href="mailto:operationmedicalcare@gmail.com"
-              className="text-gray-500 transition-colors hover:text-blue-600"
-            >
-              <MailIcon className="inline w-4 h-4 mr-1" />
-              <span>operationmedicalcare@gmail.com</span>
-            </a>
-          </li>
-        </ul>
-        <div className="px-3 py-2 pr-0">
-          <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
-            <a className="btn-main">Donate!</a>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Header = () => {
   const router = useRouter();
@@ -104,10 +66,9 @@ const Header = () => {
 
   return (
     <div
-      className="fixed top-0 z-50 flex flex-col items-center justify-center w-full bg-white md:relative"
+      className="fixed top-0 z-50 flex flex-col items-center justify-center w-full md:relative bg-secondGreen"
       style={{ boxShadow: "0px 5px 14.25px 0.75px rgba(12, 105, 184, 0.1)" }}
     >
-      <HeaderTopbar />
       <Disclosure
         as="nav"
         className="relative flex flex-row items-center justify-center w-full max-w-6xl py-4 md:py-5 md:justify-between px-7"
@@ -125,32 +86,32 @@ const Header = () => {
                 )}
               </Disclosure.Button>
             </div>
-            <h1 className="text-2xl font-bold tracking-tighter ">
+            <h1 className="font-bold tracking-tighter ">
               <Link href="/">
                 <a>
-                  <span className="flex items-center justify-center">
+                  <span className="flex items-center justify-center xl:-ml-20 lg:-ml-0 md:-ml-0 sm:ml-3 ">
                     <Image
-                      className="scale-75 md:scale-100"
+                      className="scale-0 xl:scale-100 lg:scale-100 md:scale-50"
                       src="/images/home/plus.svg"
-                      width={24}
-                      height={24}
+                      width={50}
+                      height={50}
                       alt=""
                     />{" "}
-                    <span className="ml-2 text-sm font-normal tracking-wide text-green-700 sm:text-base">
+                    <span className="-ml-10 lg:ml-5 md:ml-3 font-normal tracking-wide text-black text-lg lg:text-5xl md:text-2xl sm:text-xl xs:text-xs">
                       Operation Medical Care
                     </span>
                   </span>
                 </a>
               </Link>
             </h1>
-            <ul className="flex-row hidden space-x-5 md:flex">
+            <ul className="flex-row hidden space-x-5 md:flex text-xl">
               {navigation.map((item) => (
                 <li
                   key={item.name}
                   className={` transition-colors ${
                     item.current
                       ? "text-primary-500 hover:text-primary-700"
-                      : "text-gray-600 hover:text-primary-500"
+                      : "text-gray-700 hover:text-primary-500"
                   }`}
                 >
                   <a href={item.href} onClick={anchorLinkClick}>
@@ -170,7 +131,7 @@ const Header = () => {
               leaveTo="opacity-0"
             >
               <div
-                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-4 bg-white md:hidden top-14 ${
+                className={`absolute inset-0 z-10 flex flex-col items-center w-full pb-1 bg-white md:hidden top-20 ${
                   open
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 pointer-events-none -translate-y-3"
@@ -184,7 +145,7 @@ const Header = () => {
                     className={`
                     ${
                       item.current
-                        ? "bg-blue-300 bg-opacity-30 border-l-4 border-r-4 border-blue-500"
+                        ? "bg-blue-300 bg-opacity-30 border-l-4 border-r-4 border-mainGreen"
                         : ""
                     }
                     block px-3 py-2 text-base font-medium w-full text-center`}

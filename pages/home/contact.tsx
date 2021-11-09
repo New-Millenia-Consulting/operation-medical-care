@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Transition } from "@headlessui/react";
 import { CheckCircleIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
-import { MailIcon, PhoneIcon, MapIcon } from "@heroicons/react/outline";
+import { MailIcon} from "@heroicons/react/outline";
 
 import { useForm } from "react-hook-form";
 
@@ -60,54 +60,26 @@ const Contact = () => {
 
   return (
     <>
-      <div className="relative bg-blue-gray-50">
+      <div className="relative bg-mainGreen">
         <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
           <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="flex flex-col items-center max-w-lg mx-auto md:items-start">
               <h2
-                className="text-2xl font-extrabold tracking-tight text-center text-gray-900 sm:text-3xl md:text-left"
-                id="contact"
+                className="text-2xl font-extrabold tracking-tight text-center text-green-900 sm:text-3xl md:text-left"
               >
                 Get in touch
               </h2>
-              <p className="mt-3 text-lg leading-6 text-center text-gray-500 md:text-left">
+              <p className="mt-3 text-lg leading-6 text-center text-green-700 md:text-left">
                 Looking to donate? Volunteer? Want to learn more about us? Leave
                 us a message or call! Operation Medical Care is a 501c3
                 nonprofit.
               </p>
-              <dl className="mt-8 text-base text-gray-500">
-                <div className="">
-                  <dt className="sr-only">Postal address</dt>
-                  <dd className="flex">
-                    <MapIcon
-                      className="flex-shrink-0 w-6 h-6 text-gray-400 transition group-hover:text-primary-500"
-                      aria-hidden="true"
-                    />
-                    <div className="ml-3">
-                      <p>332 Medcrest Dr</p>
-                      <p>Crestview, FL 32536</p>
-                    </div>
-                  </dd>
-                </div>
-                <div className="mt-6 group">
-                  <dt className="sr-only">Phone number</dt>
-                  <dd className="flex">
-                    <PhoneIcon
-                      className="flex-shrink-0 w-6 h-6 text-gray-400 transition group-hover:text-primary-500"
-                      aria-hidden="true"
-                    />
-                    <Link href="tel:850-974-7400">
-                      <a className="ml-3 transition group-hover:text-primary-500 group-hover:cursor-pointer">
-                        +1 (850) 974-7400
-                      </a>
-                    </Link>
-                  </dd>
-                </div>
+              <dl className="mt-4 text-base text-green-700">
                 <div className="mt-3 group">
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <MailIcon
-                      className="flex-shrink-0 w-6 h-6 text-gray-400 transition group-hover:text-primary-500"
+                      className="flex-shrink-0 w-6 h-6 text-green-700 transition group-hover:text-primary-500"
                       aria-hidden="true"
                     />
                     <Link href="mailto:operationmedicalcare@gmail.com">

@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         primary: colors.blue,
         "blue-gray": colors.blueGray,
+        mainGreen: '#95f985',
+        secondGreen: '#d8fec2',
+        thirdGreen: '#c9fea9',
+        fourthGreen: '#5ffb01',
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
@@ -42,5 +46,4 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/forms")],
 };

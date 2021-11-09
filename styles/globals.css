@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #f9fafb;
+  background: #95f985;
 }
 
 h1,
@@ -38,4 +38,9 @@ h5 {
 .swiper-button-next,
 .swiper-button-prev {
   --swiper-navigation-color: theme("colors.blue.400");
+}
+
+.ahmeds_class {
+  position: relative; 
+  bottom: 48px;
 }
