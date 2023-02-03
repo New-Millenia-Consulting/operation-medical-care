@@ -1,10 +1,10 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
-import { Transition } from "@headlessui/react";
-import { CheckCircleIcon } from "@heroicons/react/outline";
-import { XIcon } from "@heroicons/react/solid";
-import { MailIcon} from "@heroicons/react/outline";
+// import { Transition } from "@headlessui/react";
+// import { CheckCircleIcon } from "@heroicons/react/outline";
+// import { XIcon } from "@heroicons/react/solid";
+// import { MailIcon} from "@heroicons/react/outline";
 
 // import { useForm } from "react-hook-form";
 
@@ -18,7 +18,7 @@ const Contact = () => {
   // const [submitBtnState, setSubmitBtnState] = useState<"idle" | "waiting">(
   //   "idle"
   // );
-  const [isSubmitSuccessShowing, setIsSubmitSuccessShowing] = useState(false);
+  // const [isSubmitSuccessShowing, setIsSubmitSuccessShowing] = useState(false);
 
   // const {
   //   // register,
