@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: colors.blue,
         "blue-gray": colors.blueGray,
+        mainBlue: '#0ea5e9',
         mainGreen: '#95f985',
         secondGreen: '#d8fec2',
         thirdGreen: '#c9fea9',

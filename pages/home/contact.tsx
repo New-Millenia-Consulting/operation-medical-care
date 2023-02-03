@@ -60,15 +60,41 @@ const Contact = () => {
 
   return (
     <>
-      <div className="relative bg-mainGreen">
+          <div className="pb-16 relative bg-thirdGreen">
+        {/* Leadership */}
+        <div className="px-8 py-20 pb-6 m-auto max-w-7xl xl:max-w-screen-2xl">
+          <h2
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
+            id="team"
+          >
+            Get In Touch
+            <p className="mt-3 py-2 text-lg leading-6 text-center">
+                Looking to donate? Volunteer? Want to learn more about us? Leave
+                us a message or call! Operation Medical Care is a 501c3
+                nonprofit.
+              </p>
+              <div className="py-3 pr-0">
+                <Link href="mailto:operationmedicalcare@gmail.com">
+                        <a className="btn-secondary">
+                          Email Us
+                        </a>
+                </Link>
+              </div>
+        <div>
+        </div>
+          </h2>
+          </div>
+      </div>
+      {/* <div className="relative bg-secondGreen">
         <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
           <div className="px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="flex flex-col items-center max-w-lg mx-auto md:items-start">
-              <h2
-                className="text-2xl font-extrabold tracking-tight text-center text-green-900 sm:text-3xl md:text-left"
-              >
-                Get in touch
-              </h2>
+            <h2
+            className="text-3xl font-bold text-center md:text-4xl text-blue-gray-800"
+            id="team"
+          >
+            Get In Touch
+          </h2>
               <p className="mt-3 text-lg leading-6 text-center text-green-700 md:text-left">
                 Looking to donate? Volunteer? Want to learn more about us? Leave
                 us a message or call! Operation Medical Care is a 501c3
@@ -92,7 +118,7 @@ const Contact = () => {
               </dl>
             </div>
           </div>
-          {/* <div className="px-4 py-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          <div className="px-4 py-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
                 ref={formRef}
@@ -245,14 +271,14 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-          </div> */}
+          </div>
         </div>
-      </div>
+      </div> */}
       <div
         aria-live="assertive"
         className="fixed inset-0 z-50 flex items-end px-4 py-6 pointer-events-none sm:p-6 sm:items-start"
       >
-        <div className="flex flex-col items-center w-full space-y-4 sm:items-end">
+        {/* <div className="flex flex-col items-center w-full space-y-4 sm:items-end">
           <Transition
             show={isSubmitSuccessShowing}
             as={Fragment}
@@ -292,7 +318,7 @@ const Contact = () => {
               </div>
             </div>
           </Transition>
-        </div>
+        </div> */}
       </div>
     </>
   );
