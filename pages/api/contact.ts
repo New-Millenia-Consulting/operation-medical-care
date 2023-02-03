@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
 import mail from "@sendgrid/mail";
 
-mail.setApiKey("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");
+mail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // THIS IS IMPORTANT FOR FORMIDABLE
 // turn off next bodyparser https://nextjs.org/docs/api-routes/api-middlewares#custom-config

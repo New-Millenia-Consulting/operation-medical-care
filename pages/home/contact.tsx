@@ -6,57 +6,57 @@ import { CheckCircleIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/solid";
 import { MailIcon} from "@heroicons/react/outline";
 
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 
-const EMAIL_REGEX =
-  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// const EMAIL_REGEX =
+//   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const Contact = () => {
-  const formRef = useRef();
+  // const formRef = useRef();
   const successTimeoutRef = useRef<NodeJS.Timeout | null>();
 
-  const [submitBtnState, setSubmitBtnState] = useState<"idle" | "waiting">(
-    "idle"
-  );
+  // const [submitBtnState, setSubmitBtnState] = useState<"idle" | "waiting">(
+  //   "idle"
+  // );
   const [isSubmitSuccessShowing, setIsSubmitSuccessShowing] = useState(false);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm();
+  // const {
+  //   // register,
+  //   // handleSubmit,
+  //   formState: { errors },
+  //   reset,
+  // } = useForm();
 
   useEffect(() => {
     return () => clearTimeout(successTimeoutRef.current);
   }, []);
 
-  const onSubmit = (data) => {
-    console.log(data, errors);
-    setSubmitBtnState("waiting");
+  // const onSubmit = (data) => {
+  //   console.log(data, errors);
+  //   setSubmitBtnState("waiting");
 
-    const formData = new FormData(formRef.current);
-    formData.append("viaJs", "true");
+  //   const formData = new FormData(formRef.current);
+  //   formData.append("viaJs", "true");
 
-    fetch("/api/contact", {
-      method: "POST",
-      body: formData,
-    })
-      .then(() => {
-        reset();
-        setSubmitBtnState("idle");
+  //   fetch("/api/contact", {
+  //     method: "POST",
+  //     body: formData,
+  //   })
+  //     .then(() => {
+  //       reset();
+  //       setSubmitBtnState("idle");
 
-        setIsSubmitSuccessShowing(true);
+  //       setIsSubmitSuccessShowing(true);
 
-        successTimeoutRef.current = setTimeout(() => {
-          setIsSubmitSuccessShowing(false);
-        }, 3000);
-      })
-      .catch((err) => {
-        alert(`Something went wrong: ${err}`);
-        setSubmitBtnState("idle");
-      });
-  };
+  //       successTimeoutRef.current = setTimeout(() => {
+  //         setIsSubmitSuccessShowing(false);
+  //       }, 3000);
+  //     })
+  //     .catch((err) => {
+  //       alert(`Something went wrong: ${err}`);
+  //       setSubmitBtnState("idle");
+  //     });
+  // };
 
   return (
     <>
@@ -92,7 +92,7 @@ const Contact = () => {
               </dl>
             </div>
           </div>
-          <div className="px-4 py-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          {/* <div className="px-4 py-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
             <div className="max-w-lg mx-auto lg:max-w-none">
               <form
                 ref={formRef}
@@ -245,7 +245,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
