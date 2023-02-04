@@ -51,6 +51,7 @@ import Picture44 from "../public/images/Picture44.png";
 import Picture45 from "../public/images/Picture45.png";
 import Picture46 from "../public/images/Picture46.png";
 import Picture47 from "../public/images/Picture47.png";
+import Contact from "./home/contact";
 
 // import Picture7Upscale from "../public/images/Picture7-2.png";
 
@@ -222,6 +223,7 @@ const AboutPage = () => {
           </SRLWrapper>
         </main>
       </SimpleReactLightbox>
+      <Contact />
       <Footer />
     </>
   );
