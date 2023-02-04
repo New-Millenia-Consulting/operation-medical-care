@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 
 import Picture32 from "../../public/images/Picture32.png";
