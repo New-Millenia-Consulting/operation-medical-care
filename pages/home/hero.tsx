@@ -17,11 +17,11 @@ export default function Hero() {
         dietitians, business owners, software engineers, and everyday people all
         committed to bringing healthcare to the remote villages and towns of Belize.
         </p>
-        <div className="px-0 py-2 pr-0 text-lg">
+        {/* <div className="px-0 py-2 pr-0">
           <Link href="https://charity.gofundme.com/o/en/donate-widget/31604">
             <a className="btn-main">Donate!</a>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className="absolute inset-0 z-0 grid w-full h-full lg:relative place-self-center lg:w-4/5 lg:min-h-[23rem]">
         <Image
