@@ -18,6 +18,7 @@ import ImageOkpalike from"../public/images/Okpalike.png";
 import ImagePotts from"../public/images/Potts.png";
 import ImageHardy from"../public/images/Hardy.png";
 import ImagePhillip from"../public/images/Phillip.png";
+import Contact from "./home/contact";
 
 const TeamPage = () => {
   return (
@@ -440,6 +441,7 @@ const TeamPage = () => {
           </ul>
         </div>
       </div>
+      <Contact />
       <Footer />
     </>
   );
