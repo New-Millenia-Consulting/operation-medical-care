@@ -5,7 +5,8 @@ import ImagePeter from "../../public/images/home/team/peter-joseph.jpg";
 import ImageJohnson from "../../public/images/home/team/john-johnson.jpg";
 import ImageIndu from "../../public/images/Dr.Indu2.png";
 import ImageSharlene from "../../public/images/home/team/sharlene-cox.jpg";
-import ImageBernadine from "../../public/images/Peter.png";
+
+import ImageBernadine from "../../public/images/MsPeter.png";
 import ImageSogunro from"../../public/images/sogunro-1-scaled.jpg";
 
 const TeamSection = () => {
@@ -59,14 +60,14 @@ const TeamSection = () => {
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
-              Olutayo Sogunro
+              Olutayo Sogunro, D.O., M.S.
             </h3>
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Gen. Surgery
             </h4>
             <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
-            Olutayo was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
-            Canada and New Britain, CT. She graduated cum laude from Central Connecticut 
+            Dr. Sogunro was born in Lagos, Nigeria and grew up in both Edmonton, Alberta,
+            Canada and New Britain, CT. She graduated <em>cum laude</em> from Central Connecticut 
             State University in New Britain, CT with her B.S. in Biology and minor in 
             Psychology. She completed her general surgery training in Toledo, OH. She 
             currently practices as an Acute Care and Trauma Surgeon back in her home 
@@ -117,7 +118,7 @@ const TeamSection = () => {
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
             <h3 className="text-xl font-bold text-center text-gray-800 md:text-left">
-              Indumathi Christopher
+              Indumathi Christopher, M.D.
             </h3>
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
               Fundraiser & P.C.P.
@@ -151,7 +152,7 @@ const TeamSection = () => {
               Treasurer
             </h4>
             <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
-              Sharlene Cox has served as the Treasurer of Oepration Medical Care
+              Sharlene Cox has served as the Treasurer of Operation Medical Care
               for 13 years with much success. She helps to raise the necessary
               funds for the Operation Medical Care Team to travel to Belive for
               annual mission trips, with this next trip being her&nbsp;9th.
@@ -176,7 +177,7 @@ const TeamSection = () => {
               height={256}
               objectFit="cover"
               placeholder="blur"
-              alt="Headshot image of Bernadine Peters, Health Coordinator and Dietician"
+              alt="Headshot image of Bernadine Peters, Health Coordinator and Dietitian"
             />
           </div>
           <div className="flex flex-col flex-1 py-1 md:ml-8">
@@ -184,17 +185,17 @@ const TeamSection = () => {
               Bernadine Peter
             </h3>
             <h4 className="text-lg font-semibold text-center text-green-700 md:text-left">
-              Health Coordinator & Dietician
+              Health Coordinator & Dietitian
             </h4>
             <p className="flex-1 mt-3 mr-5 ml-5 xl:ml-0 lg:ml-0 md:ml-0 text-center text-gray-600 md:text-left">
-              Peter is population health coordinator and registered dietitian at
+              Ms. Peter is a population health coordinator and registered dietitian at
               Val Verde Regional Medical Center in Del Rio, Texas. She
               previously served at Franklin Primary Health Center Inc. in
-              Mobile, Ala., where she educated patients with diabetes, heart
+              Mobile, Alabama, where she educated patients with diabetes, heart
               disease, and high blood pressure, in addition to securing
               nutrition and wellness grants for the underserved. For more than
-              15 years, Peter served as the administrator and team leader of her
-              husband’s pediatric practice in Crestview, Fla., where they
+              15 years, Ms. Peter served as the administrator and team leader of her
+              husband’s pediatric practice in Crestview, Florida, where they
               provided care for thousands of uninsured and underserved children.
             </p>
           </div>

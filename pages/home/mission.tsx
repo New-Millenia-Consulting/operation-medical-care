@@ -80,7 +80,7 @@ export default function Mission() {
             <div className="mt-6 space-y-2 text-green-700">
               <p className="text-center lg:pr-20 lg:text-left">
               Every year, we spend 8 days traveling to remote villages in Belize.
-              Our team of medical doctors, nurses, pharmacists, dietians, business owners,
+              Our team of medical doctors, nurses, pharmacists, dietitians, business owners,
               software engineers, and kind everday volunteers, treat over 900 patients and 
               distribute much needed supplies to improve the lives of those in need.
               We not only provide vital medical services and medications. We also provide

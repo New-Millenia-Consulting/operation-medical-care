@@ -22,7 +22,7 @@ import Picture13 from "../public/images/Picture13.png";
 import Picture14 from "../public/images/Picture14.png";
 import Picture15 from "../public/images/Picture15.png";
 import Picture16 from "../public/images/Picture16.png";
-import Picture17 from "../public/images/Picture17.png";
+import MsPeter from "../public/images/MsPeter.png";
 import Picture18 from "../public/images/Picture18.png";
 import Picture19 from "../public/images/Picture19.png";
 import Picture20 from "../public/images/Picture20.png";
@@ -72,7 +72,7 @@ const Images = [
   Picture14,
   Picture15,
   Picture16,
-  Picture17,
+  MsPeter,
   Picture18,
   Picture19,
   Picture20,
@@ -119,7 +119,7 @@ const Captions=[
   "Ms. Belize visiting the clinic",
   "Ms. Belize visiting the clinic",
   "",
-  "Ms. Peter, Dietitan",
+  "Ms. Peter, Dietitian",
   "",
   "Dr. Johnson",
   "Dr. Sogunro",
@@ -193,7 +193,7 @@ const AboutPage = () => {
             style={{ zIndex: 2 }}
           >
             Every year, we spent 8 days traveling to remote villages in Belize.
-            Our team of medical doctors, nurses, pharmacists, dietians, business
+            Our team of medical doctors, nurses, pharmacists, dietitians, business
             owners, software engineers, and kind everday volunteers, treat over
             900 patients and distribute much needed supplies to improve the
             lives of those in need. We not only provide vital medical
