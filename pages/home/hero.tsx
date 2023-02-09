@@ -12,7 +12,6 @@ export default function Hero() {
           Providing Care <br />
           Changing Lives
         </h1>
-        {/* A cool comment*/}
         <p className="w-full max-w-md px-2 mx-auto my-12 text-base font-light leading-7 text-gray-100 lg:my-0 lg:px-0 lg:font-normal lg:text-green-700 sm:text-xl md:mt-5 md:max-w-xl lg:max-w-3xl">
         We are a non-profit organization made up of medical doctors, nurses, pharmacists,
         dietitians, business owners, software engineers, and everyday people all
